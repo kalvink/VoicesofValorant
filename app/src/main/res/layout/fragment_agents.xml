@@ -33,7 +33,10 @@
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/agent_breach" />
+                    android:src="@drawable/agent_breach"
+                    android:clickable="true"
+                    android:focusable="true"
+                    />
 
             </androidx.cardview.widget.CardView>
 
@@ -116,11 +119,11 @@
                 app:cardElevation="6dp">
 
                 <ImageView
-                    android:id="@+id/raze"
+                    android:id="@+id/kill"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/agent_raze" />
+                    android:src="@drawable/agent_kill" />
 
             </androidx.cardview.widget.CardView>
 
@@ -133,11 +136,11 @@
                 app:cardElevation="6dp">
 
                 <ImageView
-                    android:id="@+id/reyna"
+                    android:id="@+id/omen"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/agent_reyna" />
+                    android:src="@drawable/agent_omen" />
 
             </androidx.cardview.widget.CardView>
 
@@ -159,11 +162,11 @@
                 app:cardElevation="6dp">
 
                 <ImageView
-                    android:id="@+id/raze"
+                    android:id="@+id/phoenix"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/agent_raze" />
+                    android:src="@drawable/agent_phoenix" />
 
             </androidx.cardview.widget.CardView>
 
@@ -176,11 +179,11 @@
                 app:cardElevation="6dp">
 
                 <ImageView
-                    android:id="@+id/reyna"
+                    android:id="@+id/raze"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/agent_reyna" />
+                    android:src="@drawable/agent_raze" />
 
             </androidx.cardview.widget.CardView>
 
@@ -202,11 +205,11 @@
                 app:cardElevation="6dp">
 
                 <ImageView
-                    android:id="@+id/raze"
+                    android:id="@+id/reyna"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/agent_raze" />
+                    android:src="@drawable/agent_reyna" />
 
             </androidx.cardview.widget.CardView>
 
@@ -219,11 +222,79 @@
                 app:cardElevation="6dp">
 
                 <ImageView
-                    android:id="@+id/reyna"
+                    android:id="@+id/sage"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/agent_reyna" />
+                    android:src="@drawable/agent_sage" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l6"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/skye"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/agent_skye" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/sova"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/agent_sova" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l7"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/viper"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/agent_viper" />
 
             </androidx.cardview.widget.CardView>
 
