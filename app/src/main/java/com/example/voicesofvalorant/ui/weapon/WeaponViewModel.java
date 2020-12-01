@@ -1,14 +1,14 @@
-package com.example.voicesofvalorant.ui.gallery;
+package com.example.voicesofvalorant.ui.weapon;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class WeaponViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public WeaponViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is gallery fragment");
     }
