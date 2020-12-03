@@ -10,4 +10,9 @@
     <string name="menu_agents">Agents</string>
     <string name="menu_wep">Weapons</string>
     <string name="menu_other">Others</string>
+    <string name="title_activity_sndbreach">Breach</string>
+    <string name="tab_text_1">Voice</string>
+    <string name="tab_text_2">Abilities</string>
+
+
 </resources>
