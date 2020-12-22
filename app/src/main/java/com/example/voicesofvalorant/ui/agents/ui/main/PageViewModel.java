@@ -13,6 +13,7 @@ public class PageViewModel extends ViewModel {
         @Override
         public String apply(Integer input) {
             return "Hello world from section: " + input;
+
         }
     });
 
