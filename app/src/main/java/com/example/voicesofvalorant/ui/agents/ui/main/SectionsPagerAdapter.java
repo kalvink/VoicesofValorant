@@ -9,6 +9,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.voicesofvalorant.R;
+import com.example.voicesofvalorant.ui.agents.ui.main.PlaceholderFragment;
+
+import static com.example.voicesofvalorant.R.string.tab_text_1;
+import static com.example.voicesofvalorant.R.string.tab_text_2;
 
 
 /**
@@ -18,7 +22,7 @@ import com.example.voicesofvalorant.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
+    private static final int[] TAB_TITLES = new int[]{tab_text_1, tab_text_2};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -39,9 +43,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         return mContext.getResources().getString(TAB_TITLES[position]);
     }
 
+
+
     @Override
     public int getCount() {
-        // Show 2 total pages.
         return 2;
     }
 }
