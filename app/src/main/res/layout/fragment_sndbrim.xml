@@ -39,9 +39,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="15dp"
-                    android:text="Backyard Scrimmage"
+                    android:text="Backyard Scrim"
                     android:textAlignment="center"
-                    android:textSize="18dp"
+                    android:textSize="20dp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
@@ -63,7 +63,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:padding="15dp"
                     android:text="Different Battlefield"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -88,7 +87,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:padding="15dp"
                     android:text="Failure is the Great Teacher"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -257,7 +255,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="15dp"
-                    android:text="Select Brimstone"
+                    android:text="Select Brim"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />

@@ -42,7 +42,7 @@
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:background="#121212"
                     app:srcCompat="@drawable/incendiary" />
 
@@ -66,7 +66,33 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:padding="15dp"
-                        android:text="Clearing out"
+                        android:text="Molly"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/aftershock"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="playab1_2"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:padding="15dp"
+                        android:text="Molly 2"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
@@ -129,7 +155,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:padding="15dp"
-                        android:text="Flash out"
+                        android:text="Stim Here"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
@@ -154,7 +180,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:padding="15dp"
-                        android:text="Blinding"
+                        android:text="Stim Down"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
@@ -217,34 +243,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:padding="15dp"
-                        android:text="Concussing"
+                        android:text="Smokes Down"
                         android:textAlignment="center"
                         android:textSize="18dp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/flashpoint2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:layout_weight="50"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="playab3_2"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:padding="15dp"
-                        android:text="Tremor"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
@@ -305,32 +306,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:padding="15dp"
-                        android:text="Let's go"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/flashpoint1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="playult2"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:padding="15dp"
-                        android:text="Off your feet"
+                        android:text="Open up the Sky"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
