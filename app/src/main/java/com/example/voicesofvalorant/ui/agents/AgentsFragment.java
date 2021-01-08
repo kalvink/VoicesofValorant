@@ -46,73 +46,74 @@ public class AgentsFragment extends Fragment {
         brim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("A", "test");
+                view.getContext().startActivity(new Intent(view.getContext(), BrimSnds.class));
             }
         });
         cypher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("A", "test");
+                view.getContext().startActivity(new Intent(view.getContext(), CypherSnds.class));
             }
         });
+
         jett.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("A", "test");
+                view.getContext().startActivity(new Intent(view.getContext(), JettSnds.class));
             }
         });
         kill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("A", "test");
+                view.getContext().startActivity(new Intent(view.getContext(), KillSnds.class));
             }
         });
         omen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("A", "test");
+                view.getContext().startActivity(new Intent(view.getContext(), OmenSnds.class));
             }
         });
         phoenix.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                view.getContext().startActivity(new Intent(view.getContext(), PhoenixSnds.class));
             }
         });
         raze.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("A", "test");
+                view.getContext().startActivity(new Intent(view.getContext(), RazeSnds.class));
             }
         });
         reyna.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("A", "test");
+                view.getContext().startActivity(new Intent(view.getContext(), ReynaSnds.class));
             }
         });
         sage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("A", "test");
+                view.getContext().startActivity(new Intent(view.getContext(), SageSnds.class));
             }
         });
         skye.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("A", "test");
+                view.getContext().startActivity(new Intent(view.getContext(), SkyeSnds.class));
             }
         });
         sova.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("A", "test");
+                view.getContext().startActivity(new Intent(view.getContext(), SovaSnds.class));
             }
         });
         viper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("A", "test");
+                view.getContext().startActivity(new Intent(view.getContext(), ViperSnds.class));
             }
         });
         return root;
