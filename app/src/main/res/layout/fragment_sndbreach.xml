@@ -21,6 +21,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -28,15 +29,16 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play1"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/breachtxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="Anyone Else Want To Try Me"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -44,6 +46,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
@@ -51,6 +54,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play2"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -58,8 +62,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="Hell Yeah 1"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -67,6 +71,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
@@ -74,6 +79,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play3"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -81,8 +87,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="Hell Yeah 2"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -99,6 +105,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -106,6 +113,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play4"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -113,8 +121,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="I Always do the Heavy Lifting"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -122,6 +130,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
@@ -129,6 +138,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play5"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -136,8 +146,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="I Go Through Anyone"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -145,6 +155,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_6"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
@@ -152,6 +163,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play6"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -159,8 +171,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="I'll Run Through You"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -177,6 +189,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -184,6 +197,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play7"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -191,8 +205,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="Is That the Best You've Got"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -200,6 +214,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_8"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
@@ -207,6 +222,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play8"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -214,8 +230,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="Let's Fight"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -223,6 +239,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_9"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
@@ -230,6 +247,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play9"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -237,8 +255,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="No One Beats Me"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -255,6 +273,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_10"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -262,6 +281,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play10"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -269,8 +289,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="Select Breach"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -278,6 +298,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_11"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -285,6 +306,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play11"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -292,8 +314,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="Sova Interaction"
                     android:textAlignment="center"
                     android:textSize="19dp"
@@ -301,6 +323,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/breach_12"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
@@ -308,6 +331,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="play12"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -315,8 +339,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
                     android:layout_gravity="center_vertical"
+                    android:padding="15dp"
                     android:text="Tremor"
                     android:textAlignment="center"
                     android:textSize="20dp"
