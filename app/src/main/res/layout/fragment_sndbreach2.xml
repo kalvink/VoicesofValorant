@@ -17,7 +17,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/archivo_black"
             android:gravity="center"
             android:shadowColor="#FFFFFF"
@@ -35,7 +35,6 @@
                 android:id="@+id/l1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -81,7 +80,7 @@
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/archivo_black"
             android:gravity="center"
             android:shadowColor="#FFFFFF"
@@ -100,7 +99,6 @@
                 android:id="@+id/l1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -170,7 +168,7 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/archivo_black"
             android:gravity="center"
             android:shadowColor="#FFFFFF"
@@ -189,7 +187,6 @@
                 android:id="@+id/l1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -259,7 +256,7 @@
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/archivo_black"
             android:gravity="center"
             android:shadowColor="#FFFFFF"
@@ -278,7 +275,6 @@
                 android:id="@+id/l1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 

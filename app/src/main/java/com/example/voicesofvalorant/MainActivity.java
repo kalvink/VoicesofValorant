@@ -18,7 +18,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import java.util.List;
-
+/*ALL CODE COPYRIGHTED TO KALVIN KAO
+* https://github.com/kalvink
+* kaokalvin@gmail.com
+* */
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;

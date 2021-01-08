@@ -8,6 +8,11 @@ import android.widget.Button;
 
 import com.example.voicesofvalorant.R;
 import com.example.voicesofvalorant.ui.agents.ui.main.PlaceholderFragment;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.cardview.widget.CardView;
@@ -17,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.voicesofvalorant.ui.agents.ui.main.SectionsPagerAdapter;
 
 public class BreachSnds extends AppCompatActivity {
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +34,19 @@ public class BreachSnds extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
+
+
+        // Ads
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         // Back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
