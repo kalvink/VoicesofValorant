@@ -17,7 +17,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/archivo_black"
             android:gravity="center"
             android:shadowColor="#FFFFFF"
@@ -42,27 +42,32 @@
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    tools:src="@drawable/Aftershock" />
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#121212"
+                    app:srcCompat="@drawable/aftershock" />
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/aftershock"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="8dp"
-                    android:layout_weight="1"
+                    android:layout_weight="50"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="playab1"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="6dp">
 
                     <TextView
                         android:id="@+id/textView2"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
+                        android:layout_gravity="center_horizontal|center_vertical"
                         android:padding="15dp"
-                        android:text="Play"
+                        android:text="Clearing out"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
@@ -71,13 +76,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal" />
 
         <TextView
             android:id="@+id/textView5"
@@ -106,14 +104,24 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="#121212"
+                    app:srcCompat="@drawable/flashpoint" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flashpoint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_margin="8dp"
-                    android:layout_weight="1"
+                    android:layout_weight="50"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="playab2"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="6dp">
 
@@ -123,20 +131,22 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:padding="15dp"
-                        android:text="Equip"
+                        android:text="Flash out"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
+                    android:id="@+id/flashpoint2"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="8dp"
-                    android:layout_weight="1"
+                    android:layout_weight="50"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="playab2_2"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="6dp">
 
@@ -146,90 +156,12 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:padding="15dp"
-                        android:text="Explosion"
+                        android:text="Blinding"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/l1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:padding="15dp"
-                        android:text="Flash"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:padding="15dp"
-                        android:text="Charge"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:padding="15dp"
-                        android:text="Shot"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
         </LinearLayout>
@@ -261,14 +193,24 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="#121212"
+                    app:srcCompat="@drawable/faultline" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flashpoint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_margin="8dp"
-                    android:layout_weight="1"
+                    android:layout_weight="50"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="playab3"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="6dp">
 
@@ -278,20 +220,22 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:padding="15dp"
-                        android:text="Equip"
+                        android:text="Concussing"
                         android:textAlignment="center"
-                        android:textSize="20dp"
+                        android:textSize="18dp"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
+                    android:id="@+id/flashpoint2"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="8dp"
-                    android:layout_weight="1"
+                    android:layout_weight="50"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="playab3_2"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="6dp">
 
@@ -301,90 +245,12 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:padding="15dp"
-                        android:text="Explosion"
+                        android:text="Tremor"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/l1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:padding="15dp"
-                        android:text="Flash"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:padding="15dp"
-                        android:text="Charge"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:padding="15dp"
-                        android:text="Shot"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
         </LinearLayout>
@@ -416,14 +282,24 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="#121212"
+                    app:srcCompat="@drawable/rollingthunder" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/flashpoint1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="playult"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="6dp">
 
@@ -433,13 +309,14 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:padding="15dp"
-                        android:text="Equip"
+                        android:text="Let's go"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/flashpoint1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="8dp"
@@ -447,6 +324,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="playult2"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="6dp">
 
@@ -456,90 +334,12 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:padding="15dp"
-                        android:text="Explosion"
+                        android:text="Off your feet"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/l1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:padding="15dp"
-                        android:text="Flash"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:padding="15dp"
-                        android:text="Charge"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:padding="15dp"
-                        android:text="Shot"
-                        android:textAlignment="center"
-                        android:textSize="20dp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
         </LinearLayout>

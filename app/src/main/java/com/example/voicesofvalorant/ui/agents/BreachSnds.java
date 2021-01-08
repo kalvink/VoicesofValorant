@@ -103,4 +103,33 @@ public class BreachSnds extends AppCompatActivity {
         mp = MediaPlayer.create(BreachSnds.this, R.raw.br12);
         mp.start();
     }
+
+    public void playab1(View view) {
+        mp = MediaPlayer.create(BreachSnds.this, R.raw.br_a1);
+        mp.start();
+    }
+    public void playab2(View view) {
+        mp = MediaPlayer.create(BreachSnds.this, R.raw.br_a2);
+        mp.start();
+    }
+    public void playab2_2(View view) {
+        mp = MediaPlayer.create(BreachSnds.this, R.raw.br_a2_2);
+        mp.start();
+    }
+    public void playab3(View view) {
+        mp = MediaPlayer.create(BreachSnds.this, R.raw.br_a3);
+        mp.start();
+    }
+    public void playab3_2(View view) {
+        mp = MediaPlayer.create(BreachSnds.this, R.raw.br_a3_2);
+        mp.start();
+    }
+    public void playult(View view) {
+        mp = MediaPlayer.create(BreachSnds.this, R.raw.br_ult);
+        mp.start();
+    }
+    public void playult2(View view) {
+        mp = MediaPlayer.create(BreachSnds.this, R.raw.br_ult2);
+        mp.start();
+    }
 }
