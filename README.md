@@ -1,2 +1,2 @@
-# VoicesofValorant
+# Voices of Valorant
  
