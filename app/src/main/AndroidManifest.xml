@@ -30,6 +30,61 @@
             android:label="@string/title_activity_sndbrim"
             android:theme="@style/AppTheme">
         </activity>
+        <activity
+            android:name=".ui.agents.CypherSnds"
+            android:label="Cypher"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.agents.JettSnds"
+            android:label="Jett"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.agents.KillSnds"
+            android:label="Jett"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.agents.OmenSnds"
+            android:label="Jett"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.agents.PhoenixSnds"
+            android:label="Jett"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.agents.RazeSnds"
+            android:label="Jett"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.agents.ReynaSnds"
+            android:label="Jett"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.agents.SageSnds"
+            android:label="Jett"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.agents.SkyeSnds"
+            android:label="Jett"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.agents.SovaSnds"
+            android:label="Sova"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.agents.ViperSnds"
+            android:label="Viper"
+            android:theme="@style/AppTheme">
+        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

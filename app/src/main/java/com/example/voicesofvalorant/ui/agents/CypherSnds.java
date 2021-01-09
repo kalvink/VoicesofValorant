@@ -1,21 +1,26 @@
 package com.example.voicesofvalorant.ui.agents;
 
+import android.content.Context;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
+import android.widget.Button;
 
 import com.example.voicesofvalorant.R;
 import com.example.voicesofvalorant.ui.agents.ui.main.PlaceholderFragment;
-import com.example.voicesofvalorant.ui.agents.ui.main.SectionsPagerAdapter;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.tabs.TabLayout;
+
+import androidx.cardview.widget.CardView;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.voicesofvalorant.ui.agents.ui.main.SectionsPagerAdapter;
 
 public class CypherSnds extends AppCompatActivity {
     private AdView mAdView;
@@ -51,98 +56,123 @@ public class CypherSnds extends AppCompatActivity {
 
     }
 
-
-    int[] voice = {
-            R.raw.brim1, R.raw.brim2, R.raw.brim3, R.raw.brim4, R.raw.brim5, R.raw.brim6, R.raw.brim7, R.raw.brim8, R.raw.brim9};
-    int[] abilities = {
-            R.raw.brim_a1, R.raw.brim_a1v2, R.raw.brim_a2, R.raw.brim_a2v2, R.raw.brim_a3, R.raw.brim_ult};
-
-
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
         return true;
     }
 
+
+    int[] voice = {
+            R.raw.cypher1, R.raw.cypher2, R.raw.cypher3, R.raw.cypher4, R.raw.cypher5, R.raw.cypher6, R.raw.cypher7, R.raw.cypher8, R.raw.cypher9, R.raw.cypher10, R.raw.cypher11, R.raw.cypher12};
+    int[] abilities = {
+            R.raw.cypher_ab1, R.raw.cypher_ab1v2, R.raw.cypher_ab2, R.raw.cypher_ab2v2, R.raw.cypher_ab3, R.raw.cypher_ab3v2, R.raw.cypherult};
+
     MediaPlayer mp;
 
     public void play1(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, voice[0]);
+        mp = MediaPlayer.create(this, voice[0]);
         mp.start();
     }
 
     public void play2(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, voice[1]);
+        mp = MediaPlayer.create(this, voice[1]);
         mp.start();
     }
 
     public void play3(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, voice[2]);
+        mp = MediaPlayer.create(this, voice[2]);
         mp.start();
     }
 
     public void play4(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, voice[3]);
+        mp = MediaPlayer.create(this, voice[3]);
         mp.start();
     }
 
     public void play5(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, voice[4]);
+        mp = MediaPlayer.create(this, voice[4]);
         mp.start();
     }
 
     public void play6(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, voice[5]);
+        mp = MediaPlayer.create(this, voice[5]);
         mp.start();
     }
 
     public void play7(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, voice[6]);
+        mp = MediaPlayer.create(this, voice[6]);
         mp.start();
     }
 
     public void play8(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, voice[7]);
+        mp = MediaPlayer.create(this, voice[7]);
         mp.start();
     }
 
     public void play9(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, voice[8]);
+        mp = MediaPlayer.create(this, voice[8]);
+        mp.start();
+    }
+
+    public void play10(View view) {
+        mp = MediaPlayer.create(this, voice[9]);
+        mp.start();
+    }
+
+    public void play11(View view) {
+        mp = MediaPlayer.create(this, voice[10]);
+        mp.start();
+    }
+
+    public void play12(View view) {
+        mp = MediaPlayer.create(this, voice[11]);
+        mp.start();
+    }
+
+    public void play13(View view) {
+        mp = MediaPlayer.create(this, voice[12]);
+        mp.start();
+    }
+    public void play14(View view) {
+        mp = MediaPlayer.create(this, voice[13]);
         mp.start();
     }
 
     public void playab1(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, abilities[0]);
+        mp = MediaPlayer.create(this, abilities[0]);
+        mp.start();
+    }
+
+    public void playab1v2(View view) {
+        mp = MediaPlayer.create(this, abilities[1]);
         mp.start();
     }
 
     public void playab2(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, abilities[1]);
+        mp = MediaPlayer.create(this, abilities[2]);
         mp.start();
     }
 
-    public void playab2_2(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, abilities[2]);
+    public void playab2v2(View view) {
+        mp = MediaPlayer.create(this, abilities[3]);
         mp.start();
     }
 
     public void playab3(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, abilities[3]);
+        mp = MediaPlayer.create(this, abilities[4]);
         mp.start();
     }
 
-    public void playab3_2(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, abilities[4]);
+    public void playab3v2(View view) {
+        mp = MediaPlayer.create(this, abilities[5]);
         mp.start();
     }
 
     public void playult(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, abilities[5]);
+        mp = MediaPlayer.create(this, abilities[6]);
         mp.start();
     }
 
-    public void playult2(View view) {
-        mp = MediaPlayer.create(CypherSnds.this, R.raw.br_ult2);
-        mp.start();
-    }
+
 }

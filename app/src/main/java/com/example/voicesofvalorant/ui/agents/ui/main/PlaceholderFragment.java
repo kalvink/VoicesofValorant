@@ -37,7 +37,12 @@ public class PlaceholderFragment extends Fragment {
             //0-1
             R.layout.fragment_sndbreach, R.layout.fragment_sndbreach2,
             //2-3
-            R.layout.fragment_sndbrim, R.layout.fragment_sndbrim2
+            R.layout.fragment_sndbrim, R.layout.fragment_sndbrim2,
+            //4-5
+            R.layout.fragment_sndcypher, R.layout.fragment_sndcypher2,
+            //6-7
+            R.layout.fragment_sndjett, R.layout.fragment_sndjett2
+
     };
 
 
