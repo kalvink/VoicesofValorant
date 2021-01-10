@@ -53,9 +53,9 @@ public class ReynaSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.brim1, R.raw.brim2, R.raw.brim3, R.raw.brim4, R.raw.brim5, R.raw.brim6, R.raw.brim7, R.raw.brim8, R.raw.brim9};
+            R.raw.reyna1, R.raw.reyna2, R.raw.reyna3, R.raw.reyna4, R.raw.reyna5, R.raw.reyna6, R.raw.reyna7, R.raw.reyna8};
     int[] abilities = {
-            R.raw.brim_a1, R.raw.brim_a1v2, R.raw.brim_a2, R.raw.brim_a2v2, R.raw.brim_a3, R.raw.brim_a3};
+            R.raw.reyna_a1, R.raw.reyna_a2, R.raw.reyna_a3, R.raw.reynault};
 
 
     @Override

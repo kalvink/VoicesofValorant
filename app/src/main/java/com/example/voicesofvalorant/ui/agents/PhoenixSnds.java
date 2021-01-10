@@ -53,9 +53,9 @@ public class PhoenixSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.brim1, R.raw.brim2, R.raw.brim3, R.raw.brim4, R.raw.brim5, R.raw.brim6, R.raw.brim7, R.raw.brim8, R.raw.brim9};
+            R.raw.phoenix1, R.raw.phoenix2, R.raw.phoenix3, R.raw.phoenix4, R.raw.phoenix5, R.raw.phoenix6, R.raw.phoenix7, R.raw.phoenix8, R.raw.phoenix9, R.raw.phoenix10, R.raw.phoenix11};
     int[] abilities = {
-            R.raw.brim_a1, R.raw.brim_a1v2, R.raw.brim_a2, R.raw.brim_a2v2, R.raw.brim_a3, R.raw.brim_a3};
+            R.raw.phoenix_ab1, R.raw.phoenix_ab2, R.raw.phoenix_ab3, R.raw.phoenixult};
 
 
     @Override

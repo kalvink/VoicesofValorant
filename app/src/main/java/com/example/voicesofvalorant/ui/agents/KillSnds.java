@@ -53,9 +53,9 @@ public class KillSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.brim1, R.raw.brim2, R.raw.brim3, R.raw.brim4, R.raw.brim5, R.raw.brim6, R.raw.brim7, R.raw.brim8, R.raw.brim9};
+            R.raw.kill1, R.raw.kill2, R.raw.kill3, R.raw.kill4, R.raw.kill5, R.raw.kill6, R.raw.kill7, R.raw.kill8, R.raw.kill9};
     int[] abilities = {
-            R.raw.brim_a1, R.raw.brim_a1v2, R.raw.brim_a2, R.raw.brim_a2v2, R.raw.brim_a3, R.raw.brim_ult};
+            R.raw.kill_a1, R.raw.kill_a1v2, R.raw.kill_a2, R.raw.kill_a2v2, R.raw.kill_a3, R.raw.kill_ult};
 
 
     @Override

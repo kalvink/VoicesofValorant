@@ -53,9 +53,9 @@ public class RazeSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.brim1, R.raw.brim2, R.raw.brim3, R.raw.brim4, R.raw.brim5, R.raw.brim6, R.raw.brim7, R.raw.brim8, R.raw.brim9};
+            R.raw.raze1, R.raw.raze2, R.raw.raze3, R.raw.raze4, R.raw.raze5, R.raw.raze6, R.raw.raze7, R.raw.raze8, R.raw.raze9, R.raw.raze10,R.raw.raze11 ,R.raw.raze12};
     int[] abilities = {
-            R.raw.brim_a1, R.raw.brim_a1v2, R.raw.brim_a2, R.raw.brim_a2v2, R.raw.brim_a3, R.raw.brim_a3};
+            R.raw.raze_ab1, R.raw.raze_ab1v2, R.raw.raze_ab2, R.raw.raze_ab3, R.raw.razeult};
 
 
     @Override

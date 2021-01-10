@@ -53,9 +53,9 @@ public class ViperSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.brim1, R.raw.brim2, R.raw.brim3, R.raw.brim4, R.raw.brim5, R.raw.brim6, R.raw.brim7, R.raw.brim8, R.raw.brim9};
+            R.raw.viper1, R.raw.viper2, R.raw.viper3, R.raw.viper4, R.raw.viper5, R.raw.viper6, R.raw.viper7, R.raw.viper8};
     int[] abilities = {
-            R.raw.brim_a1, R.raw.brim_a1v2, R.raw.brim_a2, R.raw.brim_a2v2, R.raw.brim_a3, R.raw.brim_a3};
+            R.raw.viper_ab1, R.raw.viper_ab2, R.raw.viper_ab3, R.raw.viper_ab3v2, R.raw.viperult};
 
 
     @Override

@@ -64,9 +64,9 @@ public class JettSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.br1, R.raw.br2, R.raw.br3, R.raw.br4, R.raw.br5, R.raw.br6, R.raw.br7, R.raw.br8, R.raw.br9, R.raw.br10, R.raw.br11, R.raw.br12};
+            R.raw.jett1, R.raw.jett2, R.raw.jett3, R.raw.jett4, R.raw.jett5, R.raw.jett6, R.raw.jett7};
     int[] abilities = {
-            R.raw.br_a1, R.raw.br_a2, R.raw.br_a2_2, R.raw.br_a3, R.raw.br_a3_2, R.raw.br_ult, R.raw.br_ult2};
+            R.raw.jett_ab1, R.raw.jett_ab1v2, R.raw.jett_ab2, R.raw.jett_ab3, R.raw.jettult};
 
     MediaPlayer mp;
 
@@ -135,12 +135,12 @@ public class JettSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void playab2(View view) {
+    public void playab1v2(View view) {
         mp = MediaPlayer.create(this, abilities[1]);
         mp.start();
     }
 
-    public void playab2_2(View view) {
+    public void playab2(View view) {
         mp = MediaPlayer.create(this, abilities[2]);
         mp.start();
     }
@@ -150,18 +150,9 @@ public class JettSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void playab3_2(View view) {
+    public void playult(View view) {
         mp = MediaPlayer.create(this, abilities[4]);
         mp.start();
     }
 
-    public void playult(View view) {
-        mp = MediaPlayer.create(this, abilities[5]);
-        mp.start();
-    }
-
-    public void playult2(View view) {
-        mp = MediaPlayer.create(this, abilities[6]);
-        mp.start();
-    }
 }

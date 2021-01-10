@@ -53,9 +53,9 @@ public class SkyeSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.brim1, R.raw.brim2, R.raw.brim3, R.raw.brim4, R.raw.brim5, R.raw.brim6, R.raw.brim7, R.raw.brim8, R.raw.brim9};
+            R.raw.skye1, R.raw.skye2, R.raw.skye3, R.raw.skye4, R.raw.skye5, R.raw.skye6, R.raw.skye7, R.raw.skye8, R.raw.skye9};
     int[] abilities = {
-            R.raw.brim_a1, R.raw.brim_a1v2, R.raw.brim_a2, R.raw.brim_a2v2, R.raw.brim_a3, R.raw.brim_a3};
+            R.raw.skye_a1, R.raw.skye_a1v2, R.raw.skye_a2, R.raw.skye_a2v2, R.raw.skye_a3, R.raw.skye_a3};
 
 
     @Override

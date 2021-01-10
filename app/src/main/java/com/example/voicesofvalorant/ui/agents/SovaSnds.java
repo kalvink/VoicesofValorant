@@ -53,9 +53,9 @@ public class SovaSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.brim1, R.raw.brim2, R.raw.brim3, R.raw.brim4, R.raw.brim5, R.raw.brim6, R.raw.brim7, R.raw.brim8, R.raw.brim9};
+            R.raw.sova1, R.raw.sova2, R.raw.sova3, R.raw.sova4, R.raw.sova5, R.raw.sova6, R.raw.sova7};
     int[] abilities = {
-            R.raw.brim_a1, R.raw.brim_a1v2, R.raw.brim_a2, R.raw.brim_a2v2, R.raw.brim_a3, R.raw.brim_a3};
+            R.raw.sova_ab1, R.raw.sova_ab2, R.raw.sova_ab3, R.raw.sova_ab3v2, R.raw.sovault};
 
 
     @Override

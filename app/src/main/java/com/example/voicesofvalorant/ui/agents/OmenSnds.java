@@ -53,9 +53,9 @@ public class OmenSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.brim1, R.raw.brim2, R.raw.brim3, R.raw.brim4, R.raw.brim5, R.raw.brim6, R.raw.brim7, R.raw.brim8, R.raw.brim9};
+            R.raw.omen1, R.raw.omen2, R.raw.omen3, R.raw.omen4, R.raw.omen5, R.raw.omen6, R.raw.omen7, R.raw.omen8};
     int[] abilities = {
-            R.raw.brim_a1, R.raw.brim_a1v2, R.raw.brim_a2, R.raw.brim_a2v2, R.raw.brim_a3, R.raw.brim_a3};
+            R.raw.omen_ab1, R.raw.omen_ab1v2, R.raw.omen_ab3, R.raw.omen_ab3v2, R.raw.omenult};
 
 
     @Override
