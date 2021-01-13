@@ -31,7 +31,6 @@ public class SageSnds extends AppCompatActivity {
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
 
-
         // Ads
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -43,19 +42,14 @@ public class SageSnds extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-
         // Back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-
     }
-
 
     int[] voice = {
             R.raw.sage1, R.raw.sage2, R.raw.sage3, R.raw.sage4, R.raw.sage5, R.raw.sage6, R.raw.sage7};
-    int[] abilities = {
-            R.raw.sage_ab1, R.raw.sage_ab2, R.raw.sage_ab2v2, R.raw.sage_ab2v3broken, R.raw.sage_ab2v3broken, R.raw.sageult};
 
     @Override
     public boolean onSupportNavigateUp() {
@@ -100,48 +94,46 @@ public class SageSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void play8(View view) {
-        mp = MediaPlayer.create(SageSnds.this, voice[7]);
-        mp.start();
-    }
-
-    public void play9(View view) {
-        mp = MediaPlayer.create(SageSnds.this, voice[8]);
-        mp.start();
-    }
+    int[] abilities = {
+            R.raw.sage_ab1, R.raw.sage_ab2v3walking, R.raw.sage_ab2, R.raw.sage_ab2v2, R.raw.sage_ab2v3broken, R.raw.sage_ab3, R.raw.sage_ab3v2, R.raw.sageult};
 
     public void playab1(View view) {
         mp = MediaPlayer.create(SageSnds.this, abilities[0]);
         mp.start();
     }
 
-    public void playab2(View view) {
+    public void playab1v2walk(View view) {
         mp = MediaPlayer.create(SageSnds.this, abilities[1]);
         mp.start();
     }
 
-    public void playab2_2(View view) {
+    public void playab2(View view) {
         mp = MediaPlayer.create(SageSnds.this, abilities[2]);
         mp.start();
     }
 
-    public void playab3(View view) {
+    public void playab2v2(View view) {
         mp = MediaPlayer.create(SageSnds.this, abilities[3]);
         mp.start();
     }
 
-    public void playab3_2(View view) {
+    public void playab2v3broken(View view) {
         mp = MediaPlayer.create(SageSnds.this, abilities[4]);
         mp.start();
     }
 
-    public void playult(View view) {
+    public void playab3(View view) {
         mp = MediaPlayer.create(SageSnds.this, abilities[5]);
         mp.start();
     }
 
-    public void playult2(View view) {
-        mp = MediaPlayer.create(SageSnds.this, R.raw.br_ult2);
+    public void playab3_2(View view) {
+        mp = MediaPlayer.create(SageSnds.this, abilities[6]);
+        mp.start();
+    }
+
+    public void playult(View view) {
+        mp = MediaPlayer.create(SageSnds.this, abilities[7]);
         mp.start();
     }
 }

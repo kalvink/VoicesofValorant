@@ -64,9 +64,7 @@ public class CypherSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.cypher1, R.raw.cypher2, R.raw.cypher3, R.raw.cypher4, R.raw.cypher5, R.raw.cypher6, R.raw.cypher7, R.raw.cypher8, R.raw.cypher9, R.raw.cypher10, R.raw.cypher11, R.raw.cypher12};
-    int[] abilities = {
-            R.raw.cypher_ab1, R.raw.cypher_ab1v2, R.raw.cypher_ab2, R.raw.cypher_ab2v2, R.raw.cypher_ab3, R.raw.cypher_ab3v2, R.raw.cypherult};
+            R.raw.cypher1, R.raw.cypher2, R.raw.cypher3, R.raw.cypher4, R.raw.cypher5, R.raw.cypher6, R.raw.cypher7, R.raw.cypher8, R.raw.cypher9, R.raw.cypher10, R.raw.cypher11, R.raw.cypher12, R.raw.cypher13, R.raw.cypher14};
 
     MediaPlayer mp;
 
@@ -134,10 +132,15 @@ public class CypherSnds extends AppCompatActivity {
         mp = MediaPlayer.create(this, voice[12]);
         mp.start();
     }
+
     public void play14(View view) {
         mp = MediaPlayer.create(this, voice[13]);
         mp.start();
     }
+
+
+    int[] abilities = {
+            R.raw.cypher_ab1, R.raw.cypher_ab1v2, R.raw.cypher_ab2, R.raw.cypher_ab2v2, R.raw.cypher_ab3, R.raw.cypher_ab3v2, R.raw.cypherult};
 
     public void playab1(View view) {
         mp = MediaPlayer.create(this, abilities[0]);

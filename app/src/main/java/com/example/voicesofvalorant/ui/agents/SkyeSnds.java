@@ -53,9 +53,9 @@ public class SkyeSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.skye1, R.raw.skye2, R.raw.skye3, R.raw.skye4, R.raw.skye5, R.raw.skye6, R.raw.skye7, R.raw.skye8, R.raw.skye9};
+            R.raw.skye1, R.raw.skye2, R.raw.skye3, R.raw.skye4, R.raw.skye5, R.raw.skye6};
     int[] abilities = {
-            R.raw.skye_a1, R.raw.skye_a1v2, R.raw.skye_a2, R.raw.skye_a2v2, R.raw.skye_a3, R.raw.skye_a3};
+            R.raw.skye_a1, R.raw.skye_a2, R.raw.skye_a3, R.raw.skyeult};
 
 
     @Override
@@ -93,21 +93,6 @@ public class SkyeSnds extends AppCompatActivity {
 
     public void play6(View view) {
         mp = MediaPlayer.create(SkyeSnds.this, voice[5]);
-        mp.start();
-    }
-
-    public void play7(View view) {
-        mp = MediaPlayer.create(SkyeSnds.this, voice[6]);
-        mp.start();
-    }
-
-    public void play8(View view) {
-        mp = MediaPlayer.create(SkyeSnds.this, voice[7]);
-        mp.start();
-    }
-
-    public void play9(View view) {
-        mp = MediaPlayer.create(SkyeSnds.this, voice[8]);
         mp.start();
     }
 

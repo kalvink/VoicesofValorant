@@ -53,9 +53,9 @@ public class KillSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.kill1, R.raw.kill2, R.raw.kill3, R.raw.kill4, R.raw.kill5, R.raw.kill6, R.raw.kill7, R.raw.kill8, R.raw.kill9};
+            R.raw.kill1, R.raw.kill2, R.raw.kill3, R.raw.kill4, R.raw.kill5, R.raw.kill6};
     int[] abilities = {
-            R.raw.kill_a1, R.raw.kill_a1v2, R.raw.kill_a2, R.raw.kill_a2v2, R.raw.kill_a3, R.raw.kill_ult};
+            R.raw.kill_a1, R.raw.kill_a2, R.raw.kill_a3, R.raw.killult};
 
 
     @Override
@@ -65,6 +65,8 @@ public class KillSnds extends AppCompatActivity {
     }
 
     MediaPlayer mp;
+
+    // Voices
 
     public void play1(View view) {
         mp = MediaPlayer.create(KillSnds.this, voice[0]);
@@ -96,20 +98,7 @@ public class KillSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void play7(View view) {
-        mp = MediaPlayer.create(KillSnds.this, voice[6]);
-        mp.start();
-    }
-
-    public void play8(View view) {
-        mp = MediaPlayer.create(KillSnds.this, voice[7]);
-        mp.start();
-    }
-
-    public void play9(View view) {
-        mp = MediaPlayer.create(KillSnds.this, voice[8]);
-        mp.start();
-    }
+    // Abilities
 
     public void playab1(View view) {
         mp = MediaPlayer.create(KillSnds.this, abilities[0]);
@@ -121,28 +110,14 @@ public class KillSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void playab2_2(View view) {
+    public void playab3(View view) {
         mp = MediaPlayer.create(KillSnds.this, abilities[2]);
         mp.start();
     }
 
-    public void playab3(View view) {
+    public void playult(View view) {
         mp = MediaPlayer.create(KillSnds.this, abilities[3]);
         mp.start();
     }
 
-    public void playab3_2(View view) {
-        mp = MediaPlayer.create(KillSnds.this, abilities[4]);
-        mp.start();
-    }
-
-    public void playult(View view) {
-        mp = MediaPlayer.create(KillSnds.this, abilities[5]);
-        mp.start();
-    }
-
-    public void playult2(View view) {
-        mp = MediaPlayer.create(KillSnds.this, R.raw.br_ult2);
-        mp.start();
-    }
 }
