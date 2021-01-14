@@ -19,7 +19,6 @@
 
     <fragment
         android:id="@+id/nav_other"
-        android:name="com.example.voicesofvalorant.ui.other.OtherFragment"
-        android:label="@string/menu_other"
-        tools:layout="@layout/fragment_other" />
+        android:name="com.example.voicesofvalorant.ui.agents.Other"
+        android:label="@string/menu_other" />
 </navigation>
