@@ -53,9 +53,9 @@ public class RazeSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.raze1, R.raw.raze2, R.raw.raze3, R.raw.raze4, R.raw.raze5, R.raw.raze6, R.raw.raze7, R.raw.raze8, R.raw.raze9, R.raw.raze10,R.raw.raze11 ,R.raw.raze12};
+            R.raw.raze1, R.raw.raze2, R.raw.raze3, R.raw.raze4, R.raw.raze5, R.raw.raze6, R.raw.raze7, R.raw.raze8, R.raw.raze9, R.raw.raze10, R.raw.raze11, R.raw.raze12};
     int[] abilities = {
-            R.raw.raze_ab1, R.raw.raze_ab1v2, R.raw.raze_ab2, R.raw.raze_ab3, R.raw.razeult};
+            R.raw.raze_ab1, R.raw.raze_ab1v2, R.raw.raze_ab2, R.raw.raze_ab3, R.raw.razeult, R.raw.razeult2, R.raw.razeult3};
 
 
     @Override
@@ -116,12 +116,12 @@ public class RazeSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void playab2(View view) {
+    public void playab1v2(View view) {
         mp = MediaPlayer.create(RazeSnds.this, abilities[1]);
         mp.start();
     }
 
-    public void playab2_2(View view) {
+    public void playab2(View view) {
         mp = MediaPlayer.create(RazeSnds.this, abilities[2]);
         mp.start();
     }
@@ -131,18 +131,18 @@ public class RazeSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void playab3_2(View view) {
+    public void playult(View view) {
         mp = MediaPlayer.create(RazeSnds.this, abilities[4]);
         mp.start();
     }
 
-    public void playult(View view) {
+    public void playult2(View view) {
         mp = MediaPlayer.create(RazeSnds.this, abilities[5]);
         mp.start();
     }
 
-    public void playult2(View view) {
-        mp = MediaPlayer.create(RazeSnds.this, R.raw.br_ult2);
+    public void playult3(View view) {
+        mp = MediaPlayer.create(RazeSnds.this, abilities[6]);
         mp.start();
     }
 }

@@ -24,7 +24,7 @@ public class SovaSnds extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_global);
-        PlaceholderFragment.setX(20);
+        PlaceholderFragment.setX(22);
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
@@ -121,28 +121,19 @@ public class SovaSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void playab2_2(View view) {
+    public void playab3(View view) {
         mp = MediaPlayer.create(SovaSnds.this, abilities[2]);
         mp.start();
     }
 
-    public void playab3(View view) {
+    public void playab3_2(View view) {
         mp = MediaPlayer.create(SovaSnds.this, abilities[3]);
         mp.start();
     }
 
-    public void playab3_2(View view) {
+    public void playult(View view) {
         mp = MediaPlayer.create(SovaSnds.this, abilities[4]);
         mp.start();
     }
 
-    public void playult(View view) {
-        mp = MediaPlayer.create(SovaSnds.this, abilities[5]);
-        mp.start();
-    }
-
-    public void playult2(View view) {
-        mp = MediaPlayer.create(SovaSnds.this, R.raw.br_ult2);
-        mp.start();
-    }
 }

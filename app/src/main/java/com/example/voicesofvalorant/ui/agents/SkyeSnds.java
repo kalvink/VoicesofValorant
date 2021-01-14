@@ -24,7 +24,7 @@ public class SkyeSnds extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_global);
-        PlaceholderFragment.setX(18);
+        PlaceholderFragment.setX(20);
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
@@ -126,8 +126,4 @@ public class SkyeSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void playult2(View view) {
-        mp = MediaPlayer.create(SkyeSnds.this, R.raw.br_ult2);
-        mp.start();
-    }
 }

@@ -106,10 +106,6 @@ public class ReynaSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void play9(View view) {
-        mp = MediaPlayer.create(ReynaSnds.this, voice[8]);
-        mp.start();
-    }
 
     public void playab1(View view) {
         mp = MediaPlayer.create(ReynaSnds.this, abilities[0]);
@@ -121,28 +117,16 @@ public class ReynaSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void playab2_2(View view) {
+
+    public void playab3(View view) {
         mp = MediaPlayer.create(ReynaSnds.this, abilities[2]);
         mp.start();
     }
 
-    public void playab3(View view) {
+
+    public void playult(View view) {
         mp = MediaPlayer.create(ReynaSnds.this, abilities[3]);
         mp.start();
     }
 
-    public void playab3_2(View view) {
-        mp = MediaPlayer.create(ReynaSnds.this, abilities[4]);
-        mp.start();
-    }
-
-    public void playult(View view) {
-        mp = MediaPlayer.create(ReynaSnds.this, abilities[5]);
-        mp.start();
-    }
-
-    public void playult2(View view) {
-        mp = MediaPlayer.create(ReynaSnds.this, R.raw.br_ult2);
-        mp.start();
-    }
 }

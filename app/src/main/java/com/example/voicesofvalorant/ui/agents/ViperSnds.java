@@ -24,7 +24,7 @@ public class ViperSnds extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_global);
-        PlaceholderFragment.setX(22);
+        PlaceholderFragment.setX(24);
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
@@ -55,7 +55,7 @@ public class ViperSnds extends AppCompatActivity {
     int[] voice = {
             R.raw.viper1, R.raw.viper2, R.raw.viper3, R.raw.viper4, R.raw.viper5, R.raw.viper6, R.raw.viper7, R.raw.viper8};
     int[] abilities = {
-            R.raw.viper_ab1, R.raw.viper_ab2, R.raw.viper_ab3, R.raw.viper_ab3v2, R.raw.viperult};
+            R.raw.viper_ab1, R.raw.viper_ab1v2, R.raw.viper_ab2, R.raw.viper_ab3, R.raw.viperult};
 
 
     @Override
@@ -70,6 +70,7 @@ public class ViperSnds extends AppCompatActivity {
         mp = MediaPlayer.create(ViperSnds.this, voice[0]);
         mp.start();
     }
+
 
     public void play2(View view) {
         mp = MediaPlayer.create(ViperSnds.this, voice[1]);
@@ -106,43 +107,30 @@ public class ViperSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void play9(View view) {
-        mp = MediaPlayer.create(ViperSnds.this, voice[8]);
-        mp.start();
-    }
-
     public void playab1(View view) {
         mp = MediaPlayer.create(ViperSnds.this, abilities[0]);
         mp.start();
     }
 
-    public void playab2(View view) {
+    public void playab1v2(View view) {
         mp = MediaPlayer.create(ViperSnds.this, abilities[1]);
         mp.start();
     }
 
-    public void playab2_2(View view) {
+
+    public void playab2(View view) {
         mp = MediaPlayer.create(ViperSnds.this, abilities[2]);
         mp.start();
     }
+
 
     public void playab3(View view) {
         mp = MediaPlayer.create(ViperSnds.this, abilities[3]);
         mp.start();
     }
 
-    public void playab3_2(View view) {
-        mp = MediaPlayer.create(ViperSnds.this, abilities[4]);
-        mp.start();
-    }
-
     public void playult(View view) {
-        mp = MediaPlayer.create(ViperSnds.this, abilities[5]);
-        mp.start();
-    }
-
-    public void playult2(View view) {
-        mp = MediaPlayer.create(ViperSnds.this, R.raw.br_ult2);
+        mp = MediaPlayer.create(ViperSnds.this, abilities[4]);
         mp.start();
     }
 }

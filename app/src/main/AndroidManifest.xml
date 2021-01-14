@@ -43,37 +43,37 @@
         </activity>
         <activity
             android:name=".ui.agents.KillSnds"
-            android:label="Jett"
+            android:label="Killjoy"
             android:theme="@style/AppTheme">
         </activity>
         <activity
             android:name=".ui.agents.OmenSnds"
-            android:label="Jett"
+            android:label="Omen"
             android:theme="@style/AppTheme">
         </activity>
         <activity
             android:name=".ui.agents.PhoenixSnds"
-            android:label="Jett"
+            android:label="Phoenix"
             android:theme="@style/AppTheme">
         </activity>
         <activity
             android:name=".ui.agents.RazeSnds"
-            android:label="Jett"
+            android:label="Raze"
             android:theme="@style/AppTheme">
         </activity>
         <activity
             android:name=".ui.agents.ReynaSnds"
-            android:label="Jett"
+            android:label="Reyna"
             android:theme="@style/AppTheme">
         </activity>
         <activity
             android:name=".ui.agents.SageSnds"
-            android:label="Jett"
+            android:label="Sage"
             android:theme="@style/AppTheme">
         </activity>
         <activity
             android:name=".ui.agents.SkyeSnds"
-            android:label="Jett"
+            android:label="Skye"
             android:theme="@style/AppTheme">
         </activity>
         <activity

@@ -111,6 +111,16 @@ public class PhoenixSnds extends AppCompatActivity {
         mp.start();
     }
 
+    public void play10(View view) {
+        mp = MediaPlayer.create(PhoenixSnds.this, voice[9]);
+        mp.start();
+    }
+
+    public void play11(View view) {
+        mp = MediaPlayer.create(PhoenixSnds.this, voice[10]);
+        mp.start();
+    }
+
     public void playab1(View view) {
         mp = MediaPlayer.create(PhoenixSnds.this, abilities[0]);
         mp.start();
@@ -121,28 +131,14 @@ public class PhoenixSnds extends AppCompatActivity {
         mp.start();
     }
 
-    public void playab2_2(View view) {
+    public void playab3(View view) {
         mp = MediaPlayer.create(PhoenixSnds.this, abilities[2]);
         mp.start();
     }
 
-    public void playab3(View view) {
+    public void playult(View view) {
         mp = MediaPlayer.create(PhoenixSnds.this, abilities[3]);
         mp.start();
     }
 
-    public void playab3_2(View view) {
-        mp = MediaPlayer.create(PhoenixSnds.this, abilities[4]);
-        mp.start();
-    }
-
-    public void playult(View view) {
-        mp = MediaPlayer.create(PhoenixSnds.this, abilities[5]);
-        mp.start();
-    }
-
-    public void playult2(View view) {
-        mp = MediaPlayer.create(PhoenixSnds.this, R.raw.br_ult2);
-        mp.start();
-    }
 }
