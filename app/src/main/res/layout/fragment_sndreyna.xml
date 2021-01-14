@@ -22,7 +22,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -35,10 +35,10 @@
 
                 <TextView
                     android:id="@+id/breachtxt"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="Get Outta My Way"
+                    android:text="Peek A Boo"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
@@ -46,10 +46,10 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_2"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
@@ -62,7 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="I Was the Stronger One"
+                    android:text="Enemy Only Looks Composed"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
@@ -70,7 +70,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_3"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -87,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="15dp"
-                    android:text="My Back Hurts"
+                    android:text="They're Starting to Panic"
                     android:textAlignment="center"
 
                     android:textSize="20dp"
@@ -123,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="15dp"
-                    android:text="Select Jett"
+                    android:text="What Can I Say"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
@@ -147,8 +147,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Think You Can Keep Up"
+                    android:padding="0dp"
+                    android:text="You Disappoint Me"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
@@ -173,7 +173,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="15dp"
-                    android:text="Supposed To Be A Fight"
+                    android:text="How Foolish Of Me"
                     android:textAlignment="center"
 
                     android:textSize="20dp"
@@ -208,7 +208,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:padding="15dp"
-                    android:text="You're Terrible"
+                    android:text="Ay Corazon"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />

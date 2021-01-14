@@ -22,8 +22,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -35,21 +35,22 @@
 
                 <TextView
                     android:id="@+id/breachtxt"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="Get Outta My Way"
+                    android:padding="0dp"
+                    android:text="Determined To Die"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/breach_2"
-                android:layout_width="match_parent"
+                android:id="@+id/breach_1"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
@@ -58,19 +59,20 @@
                 app:cardElevation="6dp">
 
                 <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="I Was the Stronger One"
+                    android:id="@+id/breachtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="0dp"
+                    android:text="I am The Hunter"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/breach_3"
-                android:layout_width="match_parent"
+                android:id="@+id/breach_1"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -82,14 +84,13 @@
                 app:cardElevation="6dp">
 
                 <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/breachtxt"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="My Back Hurts"
+                    android:padding="0dp"
+                    android:text="This Bow Has Taken Men And Beast"
                     android:textAlignment="center"
-
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
@@ -107,7 +108,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="100dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -119,11 +120,11 @@
 
                 <TextView
                     android:id="@+id/breachtxt"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Select Jett"
+                    android:padding="0dp"
+                    android:text="Babushka"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
@@ -147,8 +148,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Think You Can Keep Up"
+                    android:padding="0dp"
+                    android:text="Nowhere To Run"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
@@ -157,7 +158,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -171,9 +172,9 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:padding="15dp"
-                    android:text="Supposed To Be A Fight"
+                    android:text="Old Fashioned"
                     android:textAlignment="center"
 
                     android:textSize="20dp"
@@ -192,7 +193,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_7"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -204,13 +205,14 @@
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="You're Terrible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+
+                    android:padding="0dp"
+                    android:text="Where Ever They Run I Will Find Them"
                     android:textAlignment="center"
-                    android:textSize="20dp"
+                    android:textSize="30dp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 

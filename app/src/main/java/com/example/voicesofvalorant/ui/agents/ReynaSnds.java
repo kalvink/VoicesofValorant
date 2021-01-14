@@ -53,7 +53,7 @@ public class ReynaSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.reyna1, R.raw.reyna2, R.raw.reyna3, R.raw.reyna4, R.raw.reyna5, R.raw.reyna6, R.raw.reyna7, R.raw.reyna8};
+            R.raw.reyna1, R.raw.reyna2, R.raw.reyna3, R.raw.reyna4, R.raw.reyna5, R.raw.reyna6, R.raw.reyna7};
     int[] abilities = {
             R.raw.reyna_a1, R.raw.reyna_a2, R.raw.reyna_a3, R.raw.reynault};
 
@@ -100,12 +100,6 @@ public class ReynaSnds extends AppCompatActivity {
         mp = MediaPlayer.create(ReynaSnds.this, voice[6]);
         mp.start();
     }
-
-    public void play8(View view) {
-        mp = MediaPlayer.create(ReynaSnds.this, voice[7]);
-        mp.start();
-    }
-
 
     public void playab1(View view) {
         mp = MediaPlayer.create(ReynaSnds.this, abilities[0]);
