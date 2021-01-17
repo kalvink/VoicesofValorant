@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,1969 +8,2027 @@
     android:orientation="vertical"
     tools:context=".ui.agents.AgentsFragment">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card123"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/design_default_color_on_secondary"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView10"
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Classic"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="@string/ads"></com.google.android.gms.ads.AdView>
+    </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card123">
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView5"
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Classic"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:src="@drawable/classic" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/classicequip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/clsequiptxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/classicshoot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/classicshoottxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/classicreload"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play2"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:text="Shorty"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="15dp"
-                android:src="@drawable/classic" />
-        </androidx.cardview.widget.CardView>
+                android:layout_weight="1">
 
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/classicequip"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/clsequiptxt"
+                <ImageView
+                    android:id="@+id/imageView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:src="@drawable/shorty" />
             </androidx.cardview.widget.CardView>
 
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/classicshoot"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/classicshoottxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/classicreload"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play2"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/shortyequip"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/shortyequiptxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:layout_weight="1"
-            android:text="Shorty"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/shortyshoot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play4"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/breachtxt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
 
-            <ImageView
-                android:id="@+id/imageView6"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/shortyreload"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play5"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/shorty" />
-        </androidx.cardview.widget.CardView>
+                android:text="Frenzy"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
             <androidx.cardview.widget.CardView
-                android:id="@+id/shortyequip"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/shortyequiptxt"
+                <ImageView
+                    android:id="@+id/imageView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/shortyshoot"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play4"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:src="@drawable/frenzy" />
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/shortyreload"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play5"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fequip"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:layout_weight="1"
-            android:text="Frenzy"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fshoot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play7"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/breachtxt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
 
-            <ImageView
-                android:id="@+id/imageView6"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/freload"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play8"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/frenzy" />
-        </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Ghost"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
             <androidx.cardview.widget.CardView
-                android:id="@+id/fequip"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/breachtxt"
+                <ImageView
+                    android:id="@+id/imageView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fshoot"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play7"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:src="@drawable/ghost" />
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/freload"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play8"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/gequip"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
 
-        </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/gshoot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Ghost"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                </androidx.cardview.widget.CardView>
 
-            <ImageView
-                android:id="@+id/imageView6"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/greload"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/ghost" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:id="@+id/gequip"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/gshoot"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
-            </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Sheriff"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/greload"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textView9"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/sheriff" />
             </androidx.cardview.widget.CardView>
 
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Sheriff"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sheriffe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
 
-            <ImageView
-                android:id="@+id/imageView7"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sheriffs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sheriffr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/sheriff" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:id="@+id/sheriffe"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Stinger"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/sheriffs"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/breachtxt4"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/stinger" />
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/sheriffr"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
                 android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/stingere"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/stingers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Stinger"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/stingerr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            <ImageView
-                android:id="@+id/imageView7"
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/stinger" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
+                android:layout_margin="15dp"
+                android:text="Spectre"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/stingere"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/breachtxt"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:src="@drawable/spectre" />
             </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/stingers"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
                 android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/spectree"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/stingerr"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/spectres"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Spectre"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/spectrer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            <ImageView
-                android:id="@+id/imageView7"
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/spectre" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:id="@+id/spectree"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/spectres"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
-            </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Bucky"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/spectrer"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textView9"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/bucky" />
             </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Bucky"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/buckye"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            <ImageView
-                android:id="@+id/imageView7"
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/buckys"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/buckyr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/bucky" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:id="@+id/buckye"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/buckys"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
-            </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Judge"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/buckyr"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textView9"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/judge" />
             </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Judge"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/judgee"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            <ImageView
-                android:id="@+id/imageView7"
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/judges"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/judger"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/judge" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+                android:layout_margin="15dp"
+                android:text="Bulldog"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/judgee"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/breachtxt"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:src="@drawable/bulldog" />
             </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/judges"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
                 android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bulldoge"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/judger"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bulldogs"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Bulldog"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bulldogr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            <ImageView
-                android:id="@+id/imageView7"
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/bulldog" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:id="@+id/bulldoge"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/bulldogs"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
-            </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Guardian"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/bulldogr"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textView9"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/guardian" />
             </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Guardian"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/guardiane"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            <ImageView
-                android:id="@+id/imageView7"
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/guardians"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/guardianr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/guardian" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:id="@+id/guardiane"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/guardians"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
-            </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Phantom"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/guardianr"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textView9"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/phantom" />
             </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Phantom"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/phantome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            <ImageView
-                android:id="@+id/imageView7"
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/phantoms"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/phantomr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/phantom" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:id="@+id/phantome"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/phantoms"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
-            </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Vandal"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/phantomr"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textView9"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/vandal" />
             </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Vandal"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vandale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            <ImageView
-                android:id="@+id/imageView7"
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vandals"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vandalr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/vandal" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:id="@+id/vandale"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/vandals"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
-            </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Marshal"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/vandalr"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textView9"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/marshal" />
             </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Marshal"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/marshale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            <ImageView
-                android:id="@+id/imageView7"
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/marshals"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/marshalr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/marshal" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:id="@+id/marshale"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/marshals"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
-            </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Operator"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/marshalr"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textView9"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/operator" />
             </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Operator"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/operatore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            <ImageView
-                android:id="@+id/imageView7"
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/operators"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/operatorr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/operator" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:id="@+id/operatore"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/operators"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
-            </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Ares"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/operatorr"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textView9"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/ares" />
             </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Ares"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/arese"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            <ImageView
-                android:id="@+id/imageView7"
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/aress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/aresr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/ares" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:id="@+id/arese"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
+                android:layout_margin="15dp"
+                android:text="Odin"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/aress"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/breachtxt4"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/odin" />
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/aresr"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
                 android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/odine"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/breachtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+                </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Odin"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/odins"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Shoot"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
 
-            <ImageView
-                android:id="@+id/imageView7"
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/odinr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Reload"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/odin" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-
+                android:layout_margin="15dp"
+                android:text="Tactical Knife"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/odine"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/odins"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Shoot"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/odinr"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Reload"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Tactical Knife"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/imageView7"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:src="@drawable/tacticalknife" />
-        </androidx.cardview.widget.CardView>
+                android:layout_height="match_parent">
 
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/knifee"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play10"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
-
-                <TextView
-                    android:id="@+id/breachtxt4"
+                <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
                     android:padding="15dp"
-                    android:text="Equip"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
-
+                    android:src="@drawable/tacticalknife" />
             </androidx.cardview.widget.CardView>
 
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/knifeswing"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="100dp"
                 android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/knifee"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Swing"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play10"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/breachtxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Equip"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/knifestab"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play11"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/knifeswing"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="Stab"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="play11"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
 
-            </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Swing"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/knifestab"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="Stab"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
-</ScrollView>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

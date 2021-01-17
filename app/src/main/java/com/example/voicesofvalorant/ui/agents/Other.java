@@ -13,9 +13,14 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.voicesofvalorant.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 public class Other extends Fragment {
-
+    private AdView mAdView;
     MediaPlayer mp = new MediaPlayer();
     int[] sounds = {
             R.raw.firstkill, R.raw.secondkill, R.raw.thirdkill, R.raw.fourthkill, R.raw.ace, R.raw.clutch, R.raw.victory, R.raw.defeat};
@@ -156,6 +161,20 @@ public class Other extends Fragment {
                 });
             }
         });
+
+
+        // MOBILE ADS
+        MobileAds.initialize(getActivity(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        mAdView = (AdView) root.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
         return root;
     }
 

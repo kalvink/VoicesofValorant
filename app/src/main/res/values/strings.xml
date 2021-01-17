@@ -14,7 +14,15 @@
     <string name="tab_text_1">Voice</string>
     <string name="tab_text_2">Abilities</string>
     <string name="title_activity_sndbrim">Brimstone</string>
-    <string name="sage_ult">Ressurection</string>
+    <string name="sage_ult">Resurrection</string>
+
+
+    <!--
+    REAL: ca-app-pub-8016302998575950/7969684273
+    TEST: ca-app-pub-3940256099942544/6300978111
+    -->
+
+    <string name="ads">ca-app-pub-3940256099942544/6300978111</string>
 
 
 </resources>

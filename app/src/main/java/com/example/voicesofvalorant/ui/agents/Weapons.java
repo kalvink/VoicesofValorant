@@ -13,9 +13,14 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.voicesofvalorant.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 public class Weapons extends Fragment {
-
+    private AdView mAdView;
     MediaPlayer mp = new MediaPlayer();
     int[] sounds = {
             R.raw.classic_equip, R.raw.classic_spray, R.raw.classic_reload, R.raw.shortyequip, R.raw.shortyspray, R.raw.shortyreload, R.raw.frenzyequip, R.raw.frenzyspray, R.raw.frenzyreload,
@@ -945,6 +950,18 @@ public class Weapons extends Fragment {
                 });
             }
         });
+
+        // MOBILE ADS
+        MobileAds.initialize(getActivity(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        mAdView = (AdView) root.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         return root;
     }
