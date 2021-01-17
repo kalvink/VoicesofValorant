@@ -73,86 +73,222 @@ public class JettSnds extends AppCompatActivity {
     public void play1(View view) {
         mp = MediaPlayer.create(this, voice[0]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play2(View view) {
         mp = MediaPlayer.create(this, voice[1]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play3(View view) {
         mp = MediaPlayer.create(this, voice[2]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play4(View view) {
         mp = MediaPlayer.create(this, voice[3]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play5(View view) {
         mp = MediaPlayer.create(this, voice[4]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play6(View view) {
         mp = MediaPlayer.create(this, voice[5]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play7(View view) {
         mp = MediaPlayer.create(this, voice[6]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play8(View view) {
         mp = MediaPlayer.create(this, voice[7]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play9(View view) {
         mp = MediaPlayer.create(this, voice[8]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play10(View view) {
         mp = MediaPlayer.create(this, voice[9]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play11(View view) {
         mp = MediaPlayer.create(this, voice[10]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play12(View view) {
         mp = MediaPlayer.create(this, voice[11]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void playab1(View view) {
         mp = MediaPlayer.create(this, abilities[0]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void playab1v2(View view) {
         mp = MediaPlayer.create(this, abilities[1]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void playab2(View view) {
         mp = MediaPlayer.create(this, abilities[2]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void playab3(View view) {
         mp = MediaPlayer.create(this, abilities[3]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void playult(View view) {
         mp = MediaPlayer.create(this, abilities[4]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
 }

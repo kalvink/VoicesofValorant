@@ -26,10 +26,9 @@
                 android:layout_height="125dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:clickable="true"
+                android:clickable="false"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="play1"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 

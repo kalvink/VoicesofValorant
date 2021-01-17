@@ -40,6 +40,14 @@ public class Other extends Fragment {
             public void onClick(View view) {
                 mp = MediaPlayer.create(getContext(), sounds[0]);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    }
+
+                    ;
+                });
             }
         });
         second.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +55,14 @@ public class Other extends Fragment {
             public void onClick(View view) {
                 mp = MediaPlayer.create(getContext(), sounds[1]);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    }
+
+                    ;
+                });
             }
         });
         third.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +70,14 @@ public class Other extends Fragment {
             public void onClick(View view) {
                 mp = MediaPlayer.create(getContext(), sounds[2]);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    }
+
+                    ;
+                });
             }
         });
         fourth.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +85,14 @@ public class Other extends Fragment {
             public void onClick(View view) {
                 mp = MediaPlayer.create(getContext(), sounds[3]);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    }
+
+                    ;
+                });
             }
         });
 
@@ -69,6 +101,14 @@ public class Other extends Fragment {
             public void onClick(View view) {
                 mp = MediaPlayer.create(getContext(), sounds[4]);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    }
+
+                    ;
+                });
             }
         });
         clutch.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +116,14 @@ public class Other extends Fragment {
             public void onClick(View view) {
                 mp = MediaPlayer.create(getContext(), sounds[5]);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    }
+
+                    ;
+                });
             }
         });
         victory.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +131,14 @@ public class Other extends Fragment {
             public void onClick(View view) {
                 mp = MediaPlayer.create(getContext(), sounds[6]);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    }
+
+                    ;
+                });
             }
         });
         defeat.setOnClickListener(new View.OnClickListener() {
@@ -90,6 +146,14 @@ public class Other extends Fragment {
             public void onClick(View view) {
                 mp = MediaPlayer.create(getContext(), sounds[7]);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    }
+
+                    ;
+                });
             }
         });
         return root;

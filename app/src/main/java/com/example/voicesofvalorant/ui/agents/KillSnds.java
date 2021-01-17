@@ -71,31 +71,79 @@ public class KillSnds extends AppCompatActivity {
     public void play1(View view) {
         mp = MediaPlayer.create(KillSnds.this, voice[0]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play2(View view) {
         mp = MediaPlayer.create(KillSnds.this, voice[1]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play3(View view) {
         mp = MediaPlayer.create(KillSnds.this, voice[2]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play4(View view) {
         mp = MediaPlayer.create(KillSnds.this, voice[3]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play5(View view) {
         mp = MediaPlayer.create(KillSnds.this, voice[4]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void play6(View view) {
         mp = MediaPlayer.create(KillSnds.this, voice[5]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     // Abilities
@@ -103,21 +151,53 @@ public class KillSnds extends AppCompatActivity {
     public void playab1(View view) {
         mp = MediaPlayer.create(KillSnds.this, abilities[0]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void playab2(View view) {
         mp = MediaPlayer.create(KillSnds.this, abilities[1]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void playab3(View view) {
         mp = MediaPlayer.create(KillSnds.this, abilities[2]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
     public void playult(View view) {
         mp = MediaPlayer.create(KillSnds.this, abilities[3]);
         mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
     }
 
 }
