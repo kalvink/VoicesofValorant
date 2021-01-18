@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/nav_agents"
-        android:name="com.example.voicesofvalorant.ui.agents.AgentsFragment"
+        android:name="com.vov.voicesofvalorant.ui.agents.AgentsFragment"
         android:label="@string/menu_agents"
         tools:layout="@layout/fragment_agents" />
 
     <fragment
         android:id="@+id/nav_wep"
-        android:name="com.example.voicesofvalorant.ui.agents.Weapons"
+        android:name="com.vov.voicesofvalorant.ui.agents.Weapons"
         android:label="@string/menu_wep" />
 
     <fragment
         android:id="@+id/nav_other"
-        android:name="com.example.voicesofvalorant.ui.agents.Other"
+        android:name="com.vov.voicesofvalorant.ui.agents.Other"
         android:label="@string/menu_other" />
 </navigation>

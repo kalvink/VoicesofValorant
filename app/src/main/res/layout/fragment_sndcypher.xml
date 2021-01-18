@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="#D8D8D8"
     android:orientation="vertical"
-    tools:context=".ui.agents.AgentsFragment">
+    tools:context="com.vov.voicesofvalorant.ui.agents.AgentsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

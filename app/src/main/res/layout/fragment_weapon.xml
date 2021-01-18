@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#D8D8D8"
     android:orientation="vertical"
-    tools:context=".ui.agents.AgentsFragment">
+    tools:context="com.vov.voicesofvalorant.ui.agents.AgentsFragment">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card123"
@@ -26,7 +26,8 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             app:adSize="BANNER"
-            app:adUnitId="@string/ads"></com.google.android.gms.ads.AdView>
+            app:adUnitId="@string/ads">
+        </com.google.android.gms.ads.AdView>
     </androidx.cardview.widget.CardView>
 
 
