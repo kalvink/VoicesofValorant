@@ -1,6 +1,6 @@
 # Voices of Valorant
 
-https://play.google.com/store/apps/details?id=com.kalvinkao.guideforvalorant&hl=en_CA
+https://play.google.com/store/apps/details?id=com.vov.voicesofvalorant
 
 ![alt text](https://lh3.googleusercontent.com/XK5wgRkI3yyp7zryAipeiiZ-lymzZ7E56SmaeuUvkF5a01p5ZcyPqwHIkUyyaSjfVQiB=w720-h310-rw)
 ![alt text](https://lh3.googleusercontent.com/nxU4WMoWyxSgSrdTJGkm-G2fueLdBBpkpgCTIUP8gENNlUQj6efjLRpnJlA-KRW7vA=w720-h310-rw)
