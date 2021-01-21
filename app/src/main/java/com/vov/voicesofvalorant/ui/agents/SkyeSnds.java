@@ -170,7 +170,7 @@ public class SkyeSnds extends AppCompatActivity {
         });
     }
 
-    public void playab2_2(View view) {
+    public void playab3(View view) {
         mp = MediaPlayer.create(SkyeSnds.this, abilities[2]);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -183,34 +183,8 @@ public class SkyeSnds extends AppCompatActivity {
         });
     }
 
-    public void playab3(View view) {
-        mp = MediaPlayer.create(SkyeSnds.this, abilities[3]);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-
-            }
-
-            ;
-        });
-    }
-
-    public void playab3_2(View view) {
-        mp = MediaPlayer.create(SkyeSnds.this, abilities[4]);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-
-            }
-
-            ;
-        });
-    }
-
     public void playult(View view) {
-        mp = MediaPlayer.create(SkyeSnds.this, abilities[5]);
+        mp = MediaPlayer.create(SkyeSnds.this, abilities[3]);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             public void onCompletion(MediaPlayer mp) {

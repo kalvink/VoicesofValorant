@@ -231,7 +231,7 @@ public class SageSnds extends AppCompatActivity {
         });
     }
 
-    public void playab3_2(View view) {
+    public void playab3v2(View view) {
         mp = MediaPlayer.create(SageSnds.this, abilities[6]);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {

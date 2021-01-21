@@ -82,7 +82,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="playab1v2"
+                    android:onClick="playab1v2walk"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="6dp">
 

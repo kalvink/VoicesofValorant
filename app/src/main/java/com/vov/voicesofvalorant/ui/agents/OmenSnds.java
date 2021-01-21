@@ -57,7 +57,7 @@ public class OmenSnds extends AppCompatActivity {
     int[] voice = {
             R.raw.omen1, R.raw.omen2, R.raw.omen3, R.raw.omen4, R.raw.omen5, R.raw.omen6, R.raw.omen7, R.raw.omen8};
     int[] abilities = {
-            R.raw.omen_ab1, R.raw.omen_ab1v2, R.raw.omen_ab3, R.raw.omen_ab3v2, R.raw.omenult};
+            R.raw.omen_ab1, R.raw.omen_ab1v2, R.raw.omen_ab2, R.raw.omen_ab3, R.raw.omen_ab3v2, R.raw.omenult};
 
 
     @Override
@@ -198,7 +198,7 @@ public class OmenSnds extends AppCompatActivity {
         });
     }
 
-    public void playab2(View view) {
+    public void playab1v2(View view) {
         mp = MediaPlayer.create(OmenSnds.this, abilities[1]);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -211,7 +211,7 @@ public class OmenSnds extends AppCompatActivity {
         });
     }
 
-    public void playab2_2(View view) {
+    public void playab2(View view) {
         mp = MediaPlayer.create(OmenSnds.this, abilities[2]);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -237,7 +237,7 @@ public class OmenSnds extends AppCompatActivity {
         });
     }
 
-    public void playab3_2(View view) {
+    public void playab3v2(View view) {
         mp = MediaPlayer.create(OmenSnds.this, abilities[4]);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -263,16 +263,4 @@ public class OmenSnds extends AppCompatActivity {
         });
     }
 
-    public void playult2(View view) {
-        mp = MediaPlayer.create(OmenSnds.this, R.raw.br_ult2);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-
-            }
-
-            ;
-        });
-    }
 }

@@ -182,6 +182,44 @@ public class RazeSnds extends AppCompatActivity {
             ;
         });
     }
+    public void play10(View view) {
+        mp = MediaPlayer.create(RazeSnds.this, voice[9]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play11(View view) {
+        mp = MediaPlayer.create(RazeSnds.this, voice[10]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play12(View view) {
+        mp = MediaPlayer.create(RazeSnds.this, voice[11]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
 
     public void playab1(View view) {
         mp = MediaPlayer.create(RazeSnds.this, abilities[0]);
