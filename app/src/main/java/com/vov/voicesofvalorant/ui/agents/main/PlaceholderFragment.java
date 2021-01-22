@@ -50,9 +50,9 @@ public class PlaceholderFragment extends Fragment {
             R.layout.fragment_sndsova, R.layout.fragment_sndsova2,
             //24-25
             R.layout.fragment_sndviper, R.layout.fragment_sndviper2,
-            //26
-            R.layout.fragment_other
-
+            //26-27
+            R.layout.fragment_sndyoru, R.layout.fragment_sndyoru2
+            //28
     };
 
 

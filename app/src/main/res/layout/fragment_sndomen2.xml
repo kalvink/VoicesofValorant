@@ -66,7 +66,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:padding="15dp"
-                        android:text="Shadows travelling"
+                        android:text="Step 1"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
@@ -92,7 +92,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:padding="15dp"
-                        android:text="Cover going out"
+                        android:text="Step 2"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
@@ -218,7 +218,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:padding="15dp"
-                        android:text="Smoke 1"
+                        android:text="Shadows travelling"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />
@@ -244,7 +244,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:padding="15dp"
-                        android:text="Smoke 2"
+                        android:text="Cover going out"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         tools:ignore="RtlCompat" />

@@ -34,9 +34,10 @@
             <LinearLayout
                 android:id="@+id/l1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="NestedWeights,UselessParent">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -58,7 +59,8 @@
                     android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="playab1"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="6dp">
+                    app:cardElevation="6dp"
+                    tools:ignore="DuplicateIds">
 
                     <TextView
                         android:id="@+id/textView2"
@@ -94,7 +96,7 @@
                         android:padding="15dp"
                         android:text="Stepped on"
                         android:textAlignment="center"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         tools:ignore="RtlCompat" />
                 </androidx.cardview.widget.CardView>
 

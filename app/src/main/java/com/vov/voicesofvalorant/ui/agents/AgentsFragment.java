@@ -35,6 +35,7 @@ public class AgentsFragment extends Fragment {
         View skye = root.findViewById(R.id.skyecv);
         View sova = root.findViewById(R.id.sovacv);
         View viper = root.findViewById(R.id.vipercv);
+        View yoru = root.findViewById(R.id.yorucv);
 
         breach.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,6 +114,12 @@ public class AgentsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 view.getContext().startActivity(new Intent(view.getContext(), ViperSnds.class));
+            }
+        });
+        yoru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.getContext().startActivity(new Intent(view.getContext(), YoruSnds.class));
             }
         });
         return root;
