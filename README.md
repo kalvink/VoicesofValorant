@@ -7,8 +7,8 @@ This app features over 200 sound clips to play with from 13 agents and all the w
 
 Listen to agent voice lines, agent abilities, weapon firing sounds, equip sounds and reload sounds.
 
-Language: Java
-IDE: Android Studio
+- Language: Java
+- IDE: Android Studio
 
 ![alt text](https://play-lh.googleusercontent.com/8OIVaOUcWxDE0WiZckTLSK2LW4RFTLXPKorOHEmUrBXKtxSNXiAB6N65Py6o48s3cqZL=w720-h310-rw)
 ![alt text](https://play-lh.googleusercontent.com/o14AA_XVopaHAHnRqDeiuekkCYjD7h50QReDQOcFcqZWLakE_GJ8mCJGpFxnvS6hWP8=w720-h310-rw)
