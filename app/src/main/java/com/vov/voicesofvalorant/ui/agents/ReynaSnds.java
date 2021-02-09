@@ -53,7 +53,8 @@ public class ReynaSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.reyna1, R.raw.reyna2, R.raw.reyna3, R.raw.reyna4, R.raw.reyna5, R.raw.reyna6, R.raw.reyna7};
+            R.raw.reyna1, R.raw.reyna2, R.raw.reyna3, R.raw.reyna4, R.raw.reyna5, R.raw.reyna6, R.raw.reyna7,
+            R.raw.reyna8, R.raw.reyna9, R.raw.reyna10, R.raw.reyna11, R.raw.reyna12, R.raw.reyna13, R.raw.reyna14, R.raw.reyna15};
     int[] abilities = {
             R.raw.reyna_a1, R.raw.reyna_a2, R.raw.reyna_a3, R.raw.reynault};
 
@@ -157,6 +158,112 @@ public class ReynaSnds extends AppCompatActivity {
         });
     }
 
+    public void play8(View view) {
+        mp = MediaPlayer.create(ReynaSnds.this, voice[7]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play9(View view) {
+        mp = MediaPlayer.create(ReynaSnds.this, voice[8]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play10(View view) {
+        mp = MediaPlayer.create(ReynaSnds.this, voice[9]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play11(View view) {
+        mp = MediaPlayer.create(ReynaSnds.this, voice[10]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play12(View view) {
+        mp = MediaPlayer.create(ReynaSnds.this, voice[11]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play13(View view) {
+        mp = MediaPlayer.create(ReynaSnds.this, voice[12]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play14(View view) {
+        mp = MediaPlayer.create(ReynaSnds.this, voice[13]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play15(View view) {
+        mp = MediaPlayer.create(ReynaSnds.this, voice[14]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+    
+    //ABILITIES
+    
     public void playab1(View view) {
         mp = MediaPlayer.create(ReynaSnds.this, abilities[0]);
         mp.start();

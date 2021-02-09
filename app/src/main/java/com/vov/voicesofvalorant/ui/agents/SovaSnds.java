@@ -53,7 +53,7 @@ public class SovaSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.sova1, R.raw.sova2, R.raw.sova3, R.raw.sova4, R.raw.sova5, R.raw.sova6, R.raw.sova7};
+            R.raw.sova1, R.raw.sova2, R.raw.sova3, R.raw.sova4, R.raw.sova5, R.raw.sova6, R.raw.sova7, R.raw.sova8, R.raw.sova9, R.raw.sova10, R.raw.sova11, R.raw.sova12, R.raw.sova13, R.raw.sova14, R.raw.sova15};
     int[] abilities = {
             R.raw.sova_ab1, R.raw.sova_ab2, R.raw.sova_ab3, R.raw.sova_ab3v2, R.raw.sovault};
 
@@ -117,7 +117,6 @@ public class SovaSnds extends AppCompatActivity {
             ;
         });
     }
-
     public void play5(View view) {
         mp = MediaPlayer.create(SovaSnds.this, voice[4]);
         mp.start();
@@ -130,20 +129,16 @@ public class SovaSnds extends AppCompatActivity {
             ;
         });
     }
-
     public void play6(View view) {
         mp = MediaPlayer.create(SovaSnds.this, voice[5]);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             public void onCompletion(MediaPlayer mp) {
                 mp.release();
-
             }
-
             ;
         });
     }
-
     public void play7(View view) {
         mp = MediaPlayer.create(SovaSnds.this, voice[6]);
         mp.start();
@@ -156,7 +151,6 @@ public class SovaSnds extends AppCompatActivity {
             ;
         });
     }
-
     public void play8(View view) {
         mp = MediaPlayer.create(SovaSnds.this, voice[7]);
         mp.start();
@@ -182,6 +176,86 @@ public class SovaSnds extends AppCompatActivity {
             ;
         });
     }
+
+    public void play10(View view) {
+        mp = MediaPlayer.create(SovaSnds.this, voice[9]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play11(View view) {
+        mp = MediaPlayer.create(SovaSnds.this, voice[10]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play12(View view) {
+        mp = MediaPlayer.create(SovaSnds.this, voice[11]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play13(View view) {
+        mp = MediaPlayer.create(SovaSnds.this, voice[12]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play14(View view) {
+        mp = MediaPlayer.create(SovaSnds.this, voice[13]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play15(View view) {
+        mp = MediaPlayer.create(SovaSnds.this, voice[14]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    //ABILITIES
 
     public void playab1(View view) {
         mp = MediaPlayer.create(SovaSnds.this, abilities[0]);

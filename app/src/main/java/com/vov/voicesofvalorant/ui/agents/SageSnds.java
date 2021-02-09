@@ -49,7 +49,8 @@ public class SageSnds extends AppCompatActivity {
     }
 
     int[] voice = {
-            R.raw.sage1, R.raw.sage2, R.raw.sage3, R.raw.sage4, R.raw.sage5, R.raw.sage6, R.raw.sage7};
+            R.raw.sage1, R.raw.sage2, R.raw.sage3, R.raw.sage4, R.raw.sage5, R.raw.sage6,
+            R.raw.sage7,  R.raw.sage8, R.raw.sage9,  R.raw.sage10, R.raw.sage11,  R.raw.sage12, R.raw.sage13,  R.raw.sage14, R.raw.sage15};
 
     @Override
     public boolean onSupportNavigateUp() {
@@ -149,6 +150,114 @@ public class SageSnds extends AppCompatActivity {
             ;
         });
     }
+
+    public void play8(View view) {
+        mp = MediaPlayer.create(SageSnds.this, voice[7]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play9(View view) {
+        mp = MediaPlayer.create(SageSnds.this, voice[8]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play10(View view) {
+        mp = MediaPlayer.create(SageSnds.this, voice[9]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play11(View view) {
+        mp = MediaPlayer.create(SageSnds.this, voice[10]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play12(View view) {
+        mp = MediaPlayer.create(SageSnds.this, voice[11]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play13(View view) {
+        mp = MediaPlayer.create(SageSnds.this, voice[12]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play14(View view) {
+        mp = MediaPlayer.create(SageSnds.this, voice[13]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play15(View view) {
+        mp = MediaPlayer.create(SageSnds.this, voice[14]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    
+    //abilities
+
 
     int[] abilities = {
             R.raw.sage_ab1, R.raw.sage_ab2v3walking, R.raw.sage_ab2, R.raw.sage_ab2v2, R.raw.sage_ab2v3broken, R.raw.sage_ab3, R.raw.sage_ab3v2, R.raw.sageult};

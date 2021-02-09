@@ -60,7 +60,10 @@ public class CypherSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.cypher1, R.raw.cypher2, R.raw.cypher3, R.raw.cypher4, R.raw.cypher5, R.raw.cypher6, R.raw.cypher7, R.raw.cypher8, R.raw.cypher9, R.raw.cypher10, R.raw.cypher11, R.raw.cypher12, R.raw.cypher13, R.raw.cypher14};
+            R.raw.cypher1, R.raw.cypher2, R.raw.cypher3, R.raw.cypher4, R.raw.cypher5, R.raw.cypher6,
+            R.raw.cypher7, R.raw.cypher8, R.raw.cypher9, R.raw.cypher10, R.raw.cypher11, R.raw.cypher12,
+            R.raw.cypher13, R.raw.cypher14
+    };
 
     MediaPlayer mp;
 

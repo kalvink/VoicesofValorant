@@ -53,7 +53,8 @@ public class SkyeSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.skye1, R.raw.skye2, R.raw.skye3, R.raw.skye4, R.raw.skye5, R.raw.skye6};
+            R.raw.skye1, R.raw.skye2, R.raw.skye3, R.raw.skye4, R.raw.skye5, R.raw.skye6, R.raw.skye7,
+            R.raw.skye8, R.raw.skye9, R.raw.skye10, R.raw.skye11, R.raw.skye12, R.raw.skye13, R.raw.skye14, R.raw.skye15};
     int[] abilities = {
             R.raw.skye_a1, R.raw.skye_a2, R.raw.skye_a3, R.raw.skyeult};
 
@@ -143,7 +144,126 @@ public class SkyeSnds extends AppCompatActivity {
             ;
         });
     }
+    public void play7(View view) {
+        mp = MediaPlayer.create(SkyeSnds.this, voice[6]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
 
+            }
+
+            ;
+        });
+    }
+
+    public void play8(View view) {
+        mp = MediaPlayer.create(SkyeSnds.this, voice[7]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play9(View view) {
+        mp = MediaPlayer.create(SkyeSnds.this, voice[8]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play10(View view) {
+        mp = MediaPlayer.create(SkyeSnds.this, voice[9]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play11(View view) {
+        mp = MediaPlayer.create(SkyeSnds.this, voice[10]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play12(View view) {
+        mp = MediaPlayer.create(SkyeSnds.this, voice[11]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play13(View view) {
+        mp = MediaPlayer.create(SkyeSnds.this, voice[12]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play14(View view) {
+        mp = MediaPlayer.create(SkyeSnds.this, voice[13]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play15(View view) {
+        mp = MediaPlayer.create(SkyeSnds.this, voice[14]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+    
+    //Abilities
+    
+    
     public void playab1(View view) {
         mp = MediaPlayer.create(SkyeSnds.this, abilities[0]);
         mp.start();

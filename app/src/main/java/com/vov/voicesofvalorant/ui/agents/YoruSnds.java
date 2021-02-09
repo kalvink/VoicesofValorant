@@ -31,7 +31,6 @@ public class YoruSnds extends AppCompatActivity {
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
 
-
         // Ads
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override

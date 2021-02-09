@@ -53,7 +53,8 @@ public class KillSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.kill1, R.raw.kill2, R.raw.kill3, R.raw.kill4, R.raw.kill5, R.raw.kill6};
+            R.raw.kill1, R.raw.kill2, R.raw.kill3, R.raw.kill4, R.raw.kill5, R.raw.kill6, R.raw.kill7, R.raw.kill8,
+            R.raw.kill9, R.raw.kill10, R.raw.kill11, R.raw.kill12, R.raw.kill13, R.raw.kill14, R.raw.kill15};
     int[] abilities = {
             R.raw.kill_a1, R.raw.kill_a2, R.raw.kill_a3, R.raw.killult};
 
@@ -145,8 +146,124 @@ public class KillSnds extends AppCompatActivity {
             ;
         });
     }
+    public void play7(View view) {
+        mp = MediaPlayer.create(KillSnds.this, voice[6]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
 
-    // Abilities
+            }
+
+            ;
+        });
+    }
+
+    public void play8(View view) {
+        mp = MediaPlayer.create(KillSnds.this, voice[7]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play9(View view) {
+        mp = MediaPlayer.create(KillSnds.this, voice[8]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play10(View view) {
+        mp = MediaPlayer.create(KillSnds.this, voice[9]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play11(View view) {
+        mp = MediaPlayer.create(KillSnds.this, voice[10]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play12(View view) {
+        mp = MediaPlayer.create(KillSnds.this, voice[11]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play13(View view) {
+        mp = MediaPlayer.create(KillSnds.this, voice[12]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play14(View view) {
+        mp = MediaPlayer.create(KillSnds.this, voice[13]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    public void play15(View view) {
+        mp = MediaPlayer.create(KillSnds.this, voice[14]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    //ABILITIES
 
     public void playab1(View view) {
         mp = MediaPlayer.create(KillSnds.this, abilities[0]);

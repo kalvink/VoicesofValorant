@@ -60,7 +60,8 @@ public class JettSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.jett1, R.raw.jett2, R.raw.jett3, R.raw.jett4, R.raw.jett5, R.raw.jett6, R.raw.jett7};
+            R.raw.jett1, R.raw.jett2, R.raw.jett3, R.raw.jett4, R.raw.jett5, R.raw.jett6, R.raw.jett7,
+            R.raw.jett8, R.raw.jett9, R.raw.jett10, R.raw.jett11, R.raw.jett12, R.raw.jett13, R.raw.jett14, R.raw.jett15};
     int[] abilities = {
             R.raw.jett_ab1, R.raw.jett_ab1v2, R.raw.jett_ab2, R.raw.jett_ab3, R.raw.jettult};
 
@@ -221,6 +222,49 @@ public class JettSnds extends AppCompatActivity {
             ;
         });
     }
+    public void play13(View view) {
+        mp = MediaPlayer.create(this, voice[12]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+    public void play14(View view) {
+        mp = MediaPlayer.create(this, voice[13]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+    public void play15(View view) {
+        mp = MediaPlayer.create(this, voice[14]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+
+
+
+
+
+//ABILITIES
 
     public void playab1(View view) {
         mp = MediaPlayer.create(this, abilities[0]);
