@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.vov.voicesofvalorant.R;
 import com.vov.voicesofvalorant.ui.agents.main.PlaceholderFragment;
 import com.google.android.gms.ads.AdRequest;
@@ -45,7 +46,7 @@ public class JettSnds extends AppCompatActivity {
         mAdView.loadAd(adRequest);
 
 
-        // Back button
+        // Create Back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
@@ -55,7 +56,15 @@ public class JettSnds extends AppCompatActivity {
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
+        Animatoo.animateSlideRight(this); //fire the slide right animation
         return true;
+
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Animatoo.animateSlideRight(this); //fire the slide left animation
     }
 
 

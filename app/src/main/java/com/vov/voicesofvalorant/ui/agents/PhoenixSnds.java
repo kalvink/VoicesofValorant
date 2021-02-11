@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.vov.voicesofvalorant.R;
 import com.vov.voicesofvalorant.ui.agents.main.PlaceholderFragment;
 import com.vov.voicesofvalorant.ui.agents.main.SectionsPagerAdapter;
@@ -57,11 +58,17 @@ public class PhoenixSnds extends AppCompatActivity {
     int[] abilities = {
             R.raw.phoenix_ab1, R.raw.phoenix_ab2, R.raw.phoenix_ab3, R.raw.phoenixult};
 
-
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
+        Animatoo.animateSlideRight(this); //fire the slide right animation
         return true;
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Animatoo.animateSlideRight(this); //fire the slide left animation
     }
 
     MediaPlayer mp;

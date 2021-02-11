@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.vov.voicesofvalorant.R;
 import com.vov.voicesofvalorant.MainActivity;
 import com.vov.voicesofvalorant.ui.agents.main.PlaceholderFragment;
@@ -57,7 +58,14 @@ public class BreachSnds extends AppCompatActivity {
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
+        Animatoo.animateSlideRight(this); //fire the slide right animation
         return true;
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Animatoo.animateSlideRight(this); //fire the slide left animation
     }
 
 

@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.vov.voicesofvalorant.R;
 import com.vov.voicesofvalorant.ui.agents.main.PlaceholderFragment;
 import com.google.android.gms.ads.AdRequest;
@@ -55,9 +56,15 @@ public class CypherSnds extends AppCompatActivity {
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
+        Animatoo.animateSlideRight(this); //fire the slide right animation
         return true;
     }
 
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Animatoo.animateSlideRight(this); //fire the slide left animation
+    }
 
     int[] voice = {
             R.raw.cypher1, R.raw.cypher2, R.raw.cypher3, R.raw.cypher4, R.raw.cypher5, R.raw.cypher6,
