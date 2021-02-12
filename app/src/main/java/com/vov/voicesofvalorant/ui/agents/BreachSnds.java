@@ -72,7 +72,7 @@ public class BreachSnds extends AppCompatActivity {
 
 
     int[] voice = {
-            R.raw.br1, R.raw.br2, R.raw.br3, R.raw.br4, R.raw.br5, R.raw.br6, R.raw.br7, R.raw.br8, R.raw.br9, R.raw.br10, R.raw.br11, R.raw.br12};
+            R.raw.br1, R.raw.br2, R.raw.br3, R.raw.br4, R.raw.br5, R.raw.br6, R.raw.br7, R.raw.br8, R.raw.br9, R.raw.br10, R.raw.br11, R.raw.br12, R.raw.br13};
     int[] abilities = {
             R.raw.br_a1, R.raw.br_a2, R.raw.br_a2_2, R.raw.br_a3, R.raw.br_a3_2, R.raw.br_ult, R.raw.br_ult2};
 
@@ -234,6 +234,21 @@ public class BreachSnds extends AppCompatActivity {
         });
     }
 
+    public void play13(View view) {
+        mp = MediaPlayer.create(this, voice[12]);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+
+            }
+
+            ;
+        });
+    }
+
+    // ABILITIES
+
     public void playab1(View view) {
         mp = MediaPlayer.create(this, abilities[0]);
         mp.start();
@@ -343,7 +358,40 @@ public class BreachSnds extends AppCompatActivity {
 
     //wheel1
     public void w1(View v) {
-        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/Rotating.mp3");
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/rotating.ogg");
+    }
+    public void w2(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/caution.ogg");
+    }
+    public void w3(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/rush.ogg");
+    }
+    public void w4(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/heal.ogg");
+    }
+    public void w5(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/enemies.ogg");
+    }
+    public void w6(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/omw.ogg");
+    }
+    public void w7(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/ultalmost.ogg");
+    }
+    public void w8(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/supp.ogg");
+    }
+    public void w9(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/no.ogg");
+    }
+    public void w10(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/save.ogg");
+    }
+    public void w11(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/sry.ogg");
+    }
+    public void w12(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/breach/hello.ogg");
     }
 
 }

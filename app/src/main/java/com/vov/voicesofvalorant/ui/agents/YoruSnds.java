@@ -19,13 +19,12 @@ import com.vov.voicesofvalorant.ui.agents.main.PlaceholderFragment;
 import com.vov.voicesofvalorant.ui.agents.main.SectionsPagerAdapter;
 
 public class YoruSnds extends AppCompatActivity {
-    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_global);
-        PlaceholderFragment.setX(26);
+        PlaceholderFragment.setX(39);
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
@@ -39,7 +38,7 @@ public class YoruSnds extends AppCompatActivity {
             }
         });
 
-        mAdView = findViewById(R.id.adView);
+        AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
