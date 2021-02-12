@@ -17,7 +17,6 @@ public class AgentsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        AgentsViewModel agentsViewModel = ViewModelProviders.of(this).get(AgentsViewModel.class);
 
         View root = inflater.inflate(R.layout.fragment_agents, container, false);
 
