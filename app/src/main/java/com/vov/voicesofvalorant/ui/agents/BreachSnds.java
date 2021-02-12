@@ -343,7 +343,7 @@ public class BreachSnds extends AppCompatActivity {
 
     //wheel1
     public void w1(View v) {
-        playLink("");
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/Rotating.mp3");
     }
 
 }
