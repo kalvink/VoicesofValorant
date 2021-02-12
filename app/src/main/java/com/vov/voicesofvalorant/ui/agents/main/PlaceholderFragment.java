@@ -24,7 +24,7 @@ public class PlaceholderFragment extends Fragment {
 
             //AGENTS
             //0-1
-            R.layout.fragment_sndbreach, R.layout.fragment_sndbreach2,
+            R.layout.fragment_sndbreach, R.layout.fragment_sndbreach2, R.layout.fragment_sndbreach3,
             //2-3
             R.layout.fragment_sndbrim, R.layout.fragment_sndbrim2,
             //4-5

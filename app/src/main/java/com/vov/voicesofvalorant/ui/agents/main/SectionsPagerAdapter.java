@@ -45,6 +45,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2; //tab count change to 3 later
+        return 3; //tab count change to 3 later
     }
 }

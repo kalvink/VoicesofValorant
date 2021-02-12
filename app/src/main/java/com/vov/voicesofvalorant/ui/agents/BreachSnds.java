@@ -20,6 +20,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.vov.voicesofvalorant.ui.agents.main.SectionsPagerAdapter;
 
+import java.io.IOException;
+
 public class BreachSnds extends AppCompatActivity {
     private AdView mAdView;
 
@@ -44,7 +46,7 @@ public class BreachSnds extends AppCompatActivity {
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
-        if(MainActivity.adsOn)
+        if (MainActivity.adsOn)
             mAdView.loadAd(adRequest);
 
 
@@ -63,7 +65,7 @@ public class BreachSnds extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed(){
+    public void onBackPressed() {
         super.onBackPressed();
         Animatoo.animateSlideRight(this); //fire the slide left animation
     }
@@ -316,10 +318,32 @@ public class BreachSnds extends AppCompatActivity {
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             public void onCompletion(MediaPlayer mp) {
                 mp.release();
-
             }
 
             ;
         });
     }
+
+    //Voice wheel (play from server)
+    public void playLink(String link) {
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        try {
+            mediaPlayer.setDataSource(link);
+            mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                                                  public void onPrepared(MediaPlayer mp) {
+                                                      mp.start();
+                                                  }
+                                              }
+            );
+            mediaPlayer.prepareAsync();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //wheel1
+    public void w1(View v) {
+        playLink("");
+    }
+
 }
