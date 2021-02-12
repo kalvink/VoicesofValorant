@@ -21,7 +21,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -46,7 +46,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -71,7 +71,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -355,7 +355,8 @@
             android:id="@+id/l1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_7"

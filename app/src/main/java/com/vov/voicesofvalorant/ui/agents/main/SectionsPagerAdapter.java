@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import static com.vov.voicesofvalorant.R.string.tab_text_1;
 import static com.vov.voicesofvalorant.R.string.tab_text_2;
+import static com.vov.voicesofvalorant.R.string.tab_text_3;
 
 
 /**
@@ -44,6 +45,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 2; //tab count
     }
 }

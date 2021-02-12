@@ -15,15 +15,15 @@
 
         <LinearLayout
             android:id="@+id/l1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
-                android:layout_width="0dp"
-                android:layout_height="125dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -38,7 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:padding="0dp"
+                    android:padding="5dp"
                     android:text="Don't Stop Fighting"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -47,7 +47,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -63,7 +63,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:padding="0dp"
+                    android:padding="5dp"
                     android:text="Neighbourhood"
                     android:textAlignment="center"
                     android:textSize="16sp"
@@ -72,7 +72,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -88,7 +88,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:padding="0dp"
+                    android:padding="5dp"
                     android:text="They Want More Of Me"
                     android:textAlignment="center"
                     android:textSize="20dp"
@@ -170,14 +170,14 @@
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:padding="15dp"
+                    android:padding="5dp"
                     android:text="Five Enemies"
                     android:textAlignment="center"
 
-                    android:textSize="20dp"
+                    android:textSize="18sp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
@@ -276,7 +276,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_7"

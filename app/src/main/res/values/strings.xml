@@ -11,8 +11,9 @@
     <string name="menu_wep">Weapons</string>
     <string name="menu_other">Others</string>
     <string name="title_activity_sndbreach">Breach</string>
-    <string name="tab_text_1">Voice</string>
+    <string name="tab_text_1">Voice Quotes</string>
     <string name="tab_text_2">Abilities</string>
+    <string name="tab_text_3">Voice Commands</string>
     <string name="title_activity_sndbrim">Brimstone</string>
     <string name="sage_ult">Resurrection</string>
 

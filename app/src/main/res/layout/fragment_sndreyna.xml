@@ -15,13 +15,13 @@
 
         <LinearLayout
             android:id="@+id/l1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -45,7 +45,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_2"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -69,7 +69,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_3"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -271,8 +271,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_7"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -285,18 +285,18 @@
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
                     android:text="Hunger Always Lingers"
                     android:textAlignment="center"
-                    android:textSize="20dp"
+                    android:textSize="16sp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_7"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -321,7 +321,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_7"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -350,12 +350,13 @@
             android:id="@+id/l1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_7"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -373,13 +374,13 @@
                     android:padding="5dp"
                     android:text="Atleast They Kept It Interesting"
                     android:textAlignment="center"
-                    android:textSize="20dp"
+                    android:textSize="16sp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_7"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -398,13 +399,13 @@
                     android:padding="5dp"
                     android:text="Enough Of Your Technology"
                     android:textAlignment="center"
-                    android:textSize="20dp"
+                    android:textSize="15sp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_7"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
