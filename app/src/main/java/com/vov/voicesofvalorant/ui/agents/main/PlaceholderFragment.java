@@ -92,10 +92,10 @@ public class PlaceholderFragment extends Fragment {
                 root = inflater.inflate(tab_fragments[x + 1], container, false);
                 break;
             }
-/*            case 3: {
+            case 3: {
                 root = inflater.inflate(tab_fragments[x + 2], container, false);
                 break;
-            }*/
+            }
         }
 
         return root;

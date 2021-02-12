@@ -20,7 +20,7 @@ import static com.vov.voicesofvalorant.R.string.tab_text_3;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{tab_text_1, tab_text_2};
+    private static final int[] TAB_TITLES = new int[]{tab_text_1, tab_text_2, tab_text_3};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
