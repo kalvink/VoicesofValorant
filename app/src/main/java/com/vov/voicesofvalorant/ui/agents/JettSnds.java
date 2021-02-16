@@ -19,6 +19,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.vov.voicesofvalorant.ui.agents.main.SectionsPagerAdapter;
 
+import java.io.IOException;
+
 public class JettSnds extends AppCompatActivity {
     private AdView mAdView;
 
@@ -339,4 +341,43 @@ public class JettSnds extends AppCompatActivity {
         });
     }
 
+    //Voice wheel (play from server)
+    public void playLink(String link) {
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        try {
+            mediaPlayer.setDataSource(link);
+            mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                                                  public void onPrepared(MediaPlayer mp) {
+                                                      mp.start();
+                                                  }
+                                              }
+            );
+            mediaPlayer.prepareAsync();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //wheel1
+    public void w1(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/jett/rotate.ogg");
+    }
+    public void w2(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/jett/hey.ogg");
+    }
+    public void w3(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/jett/ultalmost.ogg");
+    }
+    public void w4(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/jett/enemy.ogg");
+    }
+    public void w5(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/jett/yes.ogg");
+    }
+    public void w6(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/jett/no.ogg");
+    }
+
+
 }
+

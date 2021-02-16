@@ -49,7 +49,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
-                    android:text="Sorry"
+                    android:text="Commend"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
-                    android:text="On My Way"
+                    android:text="I love you"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
@@ -99,7 +99,68 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
-                    android:text="No"
+                    android:text="Quiet"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/breach_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="w12"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Yes"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/breach_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="w7"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                tools:ignore="OnClick">
+
+                <TextView
+                    android:id="@+id/breachtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Ultimate Almost Ready"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
@@ -124,7 +185,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w4"
+                android:onClick="w10"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp"
                 tools:ignore="OnClick">
@@ -132,10 +193,35 @@
                 <TextView
                     android:id="@+id/breachtxt"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Thanks"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/breach_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="w11"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
-                    android:text="Enemies Spotted"
+                    android:text="Sorry"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />

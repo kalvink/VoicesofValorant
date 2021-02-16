@@ -18,6 +18,8 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.tabs.TabLayout;
 
+import java.io.IOException;
+
 public class BrimSnds extends AppCompatActivity {
     private AdView mAdView;
 
@@ -268,5 +270,38 @@ public class BrimSnds extends AppCompatActivity {
             ;
         });
     }
+
+
+    //Voice wheel (play from server)
+    public void playLink(String link) {
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        try {
+            mediaPlayer.setDataSource(link);
+            mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                                                  public void onPrepared(MediaPlayer mp) {
+                                                      mp.start();
+                                                  }
+                                              }
+            );
+            mediaPlayer.prepareAsync();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //wheel1
+    public void w1(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/brim/sry.ogg");
+    }
+    public void w2(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/brim/omw.ogg");
+    }
+    public void w3(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/brim/no.ogg");
+    }
+    public void w4(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/brim/enemy.ogg");
+    }
+
 
 }

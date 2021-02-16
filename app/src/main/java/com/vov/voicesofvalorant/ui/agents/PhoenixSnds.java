@@ -18,6 +18,8 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.tabs.TabLayout;
 
+import java.io.IOException;
+
 public class PhoenixSnds extends AppCompatActivity {
     private AdView mAdView;
 
@@ -267,5 +269,42 @@ public class PhoenixSnds extends AppCompatActivity {
             ;
         });
     }
-
+    //Voice wheel (play from server)
+    public void playLink(String link) {
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        try {
+            mediaPlayer.setDataSource(link);
+            mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                                                  public void onPrepared(MediaPlayer mp) {
+                                                      mp.start();
+                                                  }
+                                              }
+            );
+            mediaPlayer.prepareAsync();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    //wheel1
+    public void w1(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/phoenix/commend1.ogg");
+    }
+    public void w2(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/phoenix/commend2.ogg");
+    }
+    public void w3(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/phoenix/quiet.ogg");
+    }
+    public void w4(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/phoenix/enemies.ogg");
+    }
+    public void w5(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/phoenix/yes.ogg");
+    }
+    public void w6(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/phoenix/sry.ogg");
+    }
+    public void w7(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/phoenix/watching.ogg");
+    }
 }

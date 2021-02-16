@@ -18,6 +18,8 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.tabs.TabLayout;
 
+import java.io.IOException;
+
 public class RazeSnds extends AppCompatActivity {
     private AdView mAdView;
 
@@ -318,4 +320,40 @@ public class RazeSnds extends AppCompatActivity {
             ;
         });
     }
+    //Voice wheel (play from server)
+    public void playLink(String link) {
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        try {
+            mediaPlayer.setDataSource(link);
+            mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                                                  public void onPrepared(MediaPlayer mp) {
+                                                      mp.start();
+                                                  }
+                                              }
+            );
+            mediaPlayer.prepareAsync();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    //wheel1
+    public void w1(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/raze/buying.ogg");
+    }
+    public void w2(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/raze/omw.ogg");
+    }
+    public void w3(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/raze/ultnotrdy.ogg");
+    }
+    public void w4(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/raze/watch.ogg");
+    }
+    public void w5(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/raze/thx.ogg");
+    }
+    public void w6(View v) {
+        playLink("https://raw.githubusercontent.com/kalvink/VoicesofValorant/main/sounds/raze/supp.ogg");
+    }
+
 }
