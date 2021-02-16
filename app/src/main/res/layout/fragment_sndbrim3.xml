@@ -27,7 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="DuplicateIds">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
@@ -41,18 +42,18 @@
                 android:onClick="w1"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp"
-                tools:ignore="OnClick">
+                tools:ignore="DuplicateIds,OnClick">
 
                 <TextView
                     android:id="@+id/breachtxt"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
-                    android:text="Sorry"
+                    android:text="@string/sorry"
                     android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:textSize="25sp"
+                    tools:ignore="DuplicateIds,RtlCompat" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -66,7 +67,8 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="w2"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                app:cardElevation="6dp"
+                tools:ignore="OnClick">
 
                 <TextView
                     android:id="@+id/textView2"
@@ -74,16 +76,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
-                    android:text="On My Way"
+                    android:text="@string/on_my_way"
                     android:textAlignment="center"
-                    android:textSize="20dp"
-                    tools:ignore="RtlCompat" />
+                    android:textSize="25sp"
+                    tools:ignore="DuplicateIds,RtlCompat" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -91,7 +93,8 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="w3"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                app:cardElevation="6dp"
+                tools:ignore="OnClick">
 
                 <TextView
                     android:id="@+id/textView2"
@@ -99,9 +102,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
-                    android:text="No"
+                    android:text="@string/no"
                     android:textAlignment="center"
-                    android:textSize="20dp"
+                    android:textSize="25sp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
@@ -110,14 +113,15 @@
         <LinearLayout
             android:id="@+id/l1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="DuplicateIds">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/breach_1"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -127,7 +131,7 @@
                 android:onClick="w4"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp"
-                tools:ignore="OnClick">
+                tools:ignore="DuplicateIds,NestedWeights,OnClick">
 
                 <TextView
                     android:id="@+id/breachtxt"
@@ -135,9 +139,9 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
-                    android:text="Enemies Spotted"
+                    android:text="@string/enemies_spotted"
                     android:textAlignment="center"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 

@@ -30,27 +30,27 @@ public class PlaceholderFragment extends Fragment {
             //6-8
             R.layout.fragment_sndcypher, R.layout.fragment_sndcypher2, R.layout.fragment_sndcypher3,
             //9-11
-            R.layout.fragment_sndjett, R.layout.fragment_sndjett2, R.layout.fragment_sndjett2,
+            R.layout.fragment_sndjett, R.layout.fragment_sndjett2, R.layout.fragment_sndjett3,
             //12-14
-            R.layout.fragment_sndkill, R.layout.fragment_sndkill2, R.layout.fragment_sndkill2,
+            R.layout.fragment_sndkill, R.layout.fragment_sndkill2, R.layout.fragment_sndkill3,
             //15-17
-            R.layout.fragment_sndomen, R.layout.fragment_sndomen2, R.layout.fragment_sndomen2,
+            R.layout.fragment_sndomen, R.layout.fragment_sndomen2, R.layout.fragment_sndomen3,
             //18-20
-            R.layout.fragment_sndphoenix, R.layout.fragment_sndphoenix2, R.layout.fragment_sndphoenix2,
+            R.layout.fragment_sndphoenix, R.layout.fragment_sndphoenix2, R.layout.fragment_sndphoenix3,
             //21-23
-            R.layout.fragment_sndraze, R.layout.fragment_sndraze2, R.layout.fragment_sndraze2,
+            R.layout.fragment_sndraze, R.layout.fragment_sndraze2, R.layout.fragment_sndraze3,
             //24-26
-            R.layout.fragment_sndreyna, R.layout.fragment_sndreyna2, R.layout.fragment_sndreyna2,
+            R.layout.fragment_sndreyna, R.layout.fragment_sndreyna2, R.layout.fragment_sndreyna3,
             //27-29
-            R.layout.fragment_sndsage, R.layout.fragment_sndsage2, R.layout.fragment_sndsage2,
+            R.layout.fragment_sndsage, R.layout.fragment_sndsage2, R.layout.fragment_sndsage3,
             //30-32
-            R.layout.fragment_sndskye, R.layout.fragment_sndskye2, R.layout.fragment_sndskye2,
+            R.layout.fragment_sndskye, R.layout.fragment_sndskye2, R.layout.fragment_sndskye3,
             //33-35
-            R.layout.fragment_sndsova, R.layout.fragment_sndsova2, R.layout.fragment_sndsova2,
+            R.layout.fragment_sndsova, R.layout.fragment_sndsova2, R.layout.fragment_sndsova3,
             //36-38
-            R.layout.fragment_sndviper, R.layout.fragment_sndviper2, R.layout.fragment_sndviper2,
+            R.layout.fragment_sndviper, R.layout.fragment_sndviper2, R.layout.fragment_sndviper3,
             //39-41
-            R.layout.fragment_sndyoru, R.layout.fragment_sndyoru2, R.layout.fragment_sndyoru2
+            R.layout.fragment_sndyoru, R.layout.fragment_sndyoru2, R.layout.fragment_sndyoru3
             //42-44
     };
 

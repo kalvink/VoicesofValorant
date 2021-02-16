@@ -99,7 +99,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w4"
+                android:onClick="w3"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp"
                 tools:ignore="OnClick">
@@ -125,7 +125,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w5"
+                android:onClick="w4"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -186,7 +186,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w9"
+                android:onClick="w6"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 

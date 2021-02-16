@@ -24,6 +24,10 @@
     -->
 
     <string name="ads">ca-app-pub-8016302998575950/7969684273</string>
+    <string name="sorry">Sorry</string>
+    <string name="on_my_way">On My Way</string>
+    <string name="no">No</string>
+    <string name="enemies_spotted">Enemies Spotted</string>
 
 
 </resources>

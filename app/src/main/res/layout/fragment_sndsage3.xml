@@ -38,7 +38,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w5"
+                android:onClick="w1"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -123,7 +123,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w7"
+                android:onClick="w4"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp"
                 tools:ignore="OnClick">
@@ -149,7 +149,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w8"
+                android:onClick="w5"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -174,7 +174,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w9"
+                android:onClick="w6"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -209,7 +209,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w10"
+                android:onClick="w7"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp"
                 tools:ignore="OnClick">
@@ -235,7 +235,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w11"
+                android:onClick="w8"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -260,7 +260,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w12"
+                android:onClick="w9"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 

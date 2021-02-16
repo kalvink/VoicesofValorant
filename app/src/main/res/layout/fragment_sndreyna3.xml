@@ -51,7 +51,7 @@
                     android:padding="5dp"
                     android:text="Commend"
                     android:textAlignment="center"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
@@ -76,7 +76,7 @@
                     android:padding="5dp"
                     android:text="Caution"
                     android:textAlignment="center"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
@@ -99,7 +99,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w3"
+                android:onClick="w4"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp"
                 tools:ignore="OnClick">
@@ -112,7 +112,7 @@
                     android:padding="5dp"
                     android:text="On My Way"
                     android:textAlignment="center"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
@@ -125,7 +125,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w4"
+                android:onClick="w5"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -137,7 +137,7 @@
                     android:padding="5dp"
                     android:text="Enemies Spotted"
                     android:textAlignment="center"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
@@ -160,7 +160,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w5"
+                android:onClick="w7"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp"
                 tools:ignore="OnClick">
@@ -173,7 +173,7 @@
                     android:padding="5dp"
                     android:text="Spike"
                     android:textAlignment="center"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
@@ -186,7 +186,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="w6"
+                android:onClick="w9"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp">
 
@@ -198,7 +198,7 @@
                     android:padding="5dp"
                     android:text="Thanks"
                     android:textAlignment="center"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     tools:ignore="RtlCompat" />
             </androidx.cardview.widget.CardView>
 
