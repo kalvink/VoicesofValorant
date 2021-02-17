@@ -102,7 +102,7 @@
                 android:onClick="w3"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp"
-                tools:ignore="OnClick">
+                tools:ignore="NestedWeights,OnClick">
 
                 <TextView
                     android:id="@+id/breachtxt"
@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
-                    android:text="Enemies Spotted"
+                    android:text="@string/enemies_spotted"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     tools:ignore="RtlCompat" />
@@ -163,7 +163,7 @@
                 android:onClick="w5"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="6dp"
-                tools:ignore="OnClick">
+                tools:ignore="NestedWeights,OnClick">
 
                 <TextView
                     android:id="@+id/breachtxt"
@@ -171,7 +171,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
-                    android:text="Spike"
+                    android:text="@string/spike"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     tools:ignore="RtlCompat" />
@@ -196,7 +196,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:padding="5dp"
-                    android:text="Thanks"
+                    android:text="@string/thanks"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     tools:ignore="RtlCompat" />

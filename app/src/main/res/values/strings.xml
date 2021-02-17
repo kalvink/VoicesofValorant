@@ -28,6 +28,10 @@
     <string name="on_my_way">On My Way</string>
     <string name="no">No</string>
     <string name="enemies_spotted">Enemies Spotted</string>
+    <string name="requires_internet_connection">REQUIRES INTERNET CONNECTION</string>
+    <string name="enemies_spotted">Enemies Spotted</string>
+    <string name="spike">Spike</string>
+    <string name="thanks">Thanks</string>
 
 
 </resources>
