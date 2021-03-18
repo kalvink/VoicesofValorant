@@ -2,6 +2,8 @@
 
 https://play.google.com/store/apps/details?id=com.vov.voicesofvalorant
 
+Voices of Valorant was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this fan-made project in any way.
+
 Soundboard app for Valorant. Listen to favourite agent sounds and more!
 
 Over 320 sound clips!
