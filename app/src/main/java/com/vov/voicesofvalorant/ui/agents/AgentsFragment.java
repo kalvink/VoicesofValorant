@@ -19,11 +19,12 @@ public class AgentsFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_agents, container, false);
-
+        View astra = root.findViewById(R.id.astracv);
         View breach = root.findViewById(R.id.breachcv);
         View brim = root.findViewById(R.id.brimcv);
         View cypher = root.findViewById(R.id.cyphercv);
         View jett = root.findViewById(R.id.jettcv);
+        View kayo = root.findViewById(R.id.kayocv);
         View kill = root.findViewById(R.id.killcv);
         View omen = root.findViewById(R.id.omencv);
         View phoenix = root.findViewById(R.id.phoenixcv);
@@ -35,6 +36,13 @@ public class AgentsFragment extends Fragment {
         View viper = root.findViewById(R.id.vipercv);
         View yoru = root.findViewById(R.id.yorucv);
 
+        astra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.getContext().startActivity(new Intent(view.getContext(), AstraSnds.class));
+                Animatoo.animateSlideLeft(view.getContext());  //fire the slide animation
+            }
+        });
         breach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,6 +71,14 @@ public class AgentsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 view.getContext().startActivity(new Intent(view.getContext(), JettSnds.class));
+                Animatoo.animateSlideLeft(view.getContext());  //fire the slide animation
+
+            }
+        });
+        kayo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.getContext().startActivity(new Intent(view.getContext(), KayoSnds.class));
                 Animatoo.animateSlideLeft(view.getContext());  //fire the slide animation
 
             }
